@@ -1,0 +1,126 @@
+// ===========================================================================
+// The site's authoring vocabulary. All markup is emitted here; course.typ
+// stays pure data and site.typ stays a list of pages. Mirrors the split
+// that lib/book.typ makes in the book repo.
+// ===========================================================================
+
+#let _kind-label = (
+  lecture: "Lecture", lab: "Lab", disc: "Discussion", due: "Due",
+  exam: "Exam", reading: "Reading", holiday: "Holiday",
+)
+
+#let lozenge(kind, body) = html.elem("strong", attrs: (class: "lz lz-" + kind), body)
+
+#let week-of(date, start) = calc.floor((date - start).days() / 7) + 1
+
+#let _fmt-day(date) = date.display("[weekday repr:short], [month repr:short] [day padding:none]")
+
+// One schedule entry: lozenge, linked title, trailing small links, an
+// optional one-line note, an optional reading pointer.
+#let entry(s) = {
+  let name = _kind-label.at(s.kind, default: "Item")
+  let tag = if "n" in s { name + " " + str(s.n) } else { name }
+  html.elem("div", attrs: (class: "entry"))[
+    #lozenge(s.kind, tag)
+    #if s.at("href", default: none) != none [#link(s.href, s.title)] else [#s.title]
+    #for e in s.at("extras", default: ()) [
+      #html.elem("a", attrs: (class: "xtra", href: e.href), e.label)
+    ]
+    #if s.at("reading", default: none) != none {
+      html.elem("span", attrs: (class: "reading"), s.reading)
+    }
+    #if s.at("note", default: none) != none {
+      html.elem("div", attrs: (class: "note"), s.note)
+    }
+  ]
+}
+
+// A week: heading, then one row per date. Main lane left, due lane right.
+#let week-block(w, items, current: false) = {
+  let dates = items.map(s => s.date).dedup().sorted(key: d => d.ordinal())
+  let cls = if current { "week current" } else { "week" }
+  html.elem("section", attrs: (class: cls, id: "week-" + str(w)))[
+    #html.elem("h2", attrs: (class: "week-label"))[
+      #link("#week-" + str(w), "Week " + str(w))
+    ]
+    #html.elem("div", attrs: (class: "rows"))[
+      #for dt in dates {
+        let same = items.filter(s => s.date == dt)
+        let main = same.filter(s => s.kind != "due")
+        let due = same.filter(s => s.kind == "due")
+        html.elem("div", attrs: (class: "row"))[
+          #html.elem("div", attrs: (class: "when"), _fmt-day(dt))
+          #html.elem("div", attrs: (class: "what"))[#for s in main [#entry(s)]]
+          #html.elem("div", attrs: (class: "due"))[#for s in due [#entry(s)]]
+        ]
+      }
+    ]
+  ]
+}
+
+#let calendar(term, sessions) = {
+  let ws = sessions.map(s => week-of(s.date, term.start)).dedup().sorted()
+  if term.weeks-descending { ws = ws.rev() }
+  html.elem("div", attrs: (class: "calendar"))[
+    #let now = week-of(term.today, term.start)
+    #for w in ws {
+      week-block(w, sessions.filter(s => week-of(s.date, term.start) == w), current: w == now)
+    }
+  ]
+}
+
+// ------------------------------------------------------------------ left rail
+
+#let _rail-section(title, body) = html.elem("section", attrs: (class: "rail-sec"))[
+  #html.elem("h3", title)
+  #body
+]
+
+#let rail(term, intro, doodle, quick-links, policies, staff) = {
+  html.elem("aside", attrs: (class: "rail"))[
+    #html.elem("div", attrs: (class: "brand"))[
+      #html.elem("div", attrs: (class: "course"), term.course)
+      #html.elem("div", attrs: (class: "term"), term.name)
+      #html.elem("div", attrs: (class: "coursetitle"), term.title)
+    ]
+    #html.elem("div", attrs: (class: "intro"), intro)
+    #if doodle != none {
+      html.elem("div", attrs: (class: "doodle"), image(doodle))
+    }
+    #_rail-section("Go to")[
+      #html.elem("ul", attrs: (class: "links"))[
+        #for l in quick-links [
+          #html.elem("li")[
+            #link(l.href, l.label)
+            #if l.at("note", default: none) != none {
+              html.elem("span", attrs: (class: "sub"), l.note)
+            }
+          ]
+        ]
+      ]
+    ]
+    #_rail-section("Staff")[
+      #html.elem("ul", attrs: (class: "staff", id: "staff"))[
+        #for p in staff [
+          #html.elem("li")[
+            #if p.href != none [#link(p.href, p.name)] else [#p.name]
+            #html.elem("span", attrs: (class: "sub"), p.role)
+            #html.elem("span", attrs: (class: "hours"), p.hours)
+          ]
+        ]
+      ]
+    ]
+    #_rail-section("Policies")[
+      #html.elem("ul", attrs: (class: "links"))[
+        #for l in policies [#html.elem("li")[#link(l.href, l.label)]]
+      ]
+    ]
+  ]
+}
+
+// --------------------------------------------------------------------- shell
+
+#let shell(left, right) = {
+  html.elem("link", attrs: (rel: "stylesheet", href: "assets/site.css"))
+  html.elem("div", attrs: (class: "page"))[#left #right]
+}

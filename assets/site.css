@@ -1,0 +1,123 @@
+:root {
+  --sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+  --bg: #fff;
+  --fg: #14171c;
+  --muted: #6b7480;
+  --link: #1f4fd8;
+  --rule: #d9dde3;
+  --rule-faint: #ecEFF3;
+  --accent-bg: #f5f8ff;
+  --lz-lecture: #3b5bdb;
+  --lz-lab: #0d7a6f;
+  --lz-disc: #7048b6;
+  --lz-due: #b45309;
+  --lz-exam: #b42318;
+  --lz-reading: #52606d;
+  --lz-holiday: #8b939c;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #14171b; --fg: #e6e9ed; --muted: #939ba5;
+    --link: #7ea6ff; --rule: #2b3138; --rule-faint: #21262c; --accent-bg: #1b2230;
+    --lz-lecture: #5b78e8; --lz-lab: #17998b; --lz-disc: #9068d8;
+    --lz-due: #d08324; --lz-exam: #d9534a; --lz-reading: #6b7684; --lz-holiday: #5c646d;
+  }
+}
+
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0; background: var(--bg); color: var(--fg);
+  font: 14.5px/1.42 var(--sans);
+  font-variant-numeric: tabular-nums;
+}
+a { color: var(--link); text-decoration: none; }
+a:hover { text-decoration: underline; }
+code { font: 0.86em/1 var(--mono); background: var(--rule-faint); padding: .1em .3em; border-radius: 3px; }
+
+/* ------------------------------------------------------------------ layout */
+.page {
+  display: grid;
+  grid-template-columns: 18.5rem minmax(0, 1fr);
+  gap: 3rem;
+  max-width: 70rem;
+  margin: 0 auto;
+  padding: 2.2rem 1.5rem 6rem;
+}
+.rail { position: sticky; top: 2.2rem; align-self: start; }
+@media (max-width: 62rem) {
+  .page { grid-template-columns: 1fr; gap: 2rem; padding: 1.2rem 1rem 4rem; }
+  .rail { position: static; order: 2; }
+  .cal-col { order: 1; }
+}
+
+/* -------------------------------------------------------------- left rail */
+.brand { margin-bottom: .9rem; }
+.brand .course { font-size: 1.5rem; font-weight: 700; letter-spacing: -.015em; line-height: 1.1; }
+.brand .term { color: var(--muted); font-size: .82rem; font-weight: 600;
+               text-transform: uppercase; letter-spacing: .07em; margin-top: .1rem; }
+.brand .coursetitle { font-size: .88rem; color: var(--fg); margin-top: .35rem; }
+.intro { font-size: .87rem; color: var(--muted); margin-bottom: 1.3rem; }
+.doodle { margin-bottom: 1.3rem; }
+.doodle img { display: block; width: 100%; height: auto; }
+
+.rail-sec { margin-bottom: 1.25rem; }
+.rail-sec h3 {
+  font-size: .68rem; font-weight: 700; text-transform: uppercase; letter-spacing: .1em;
+  color: var(--muted); margin: 0 0 .3rem; padding-bottom: .22rem;
+  border-bottom: 1px solid var(--rule);
+}
+ul.links, ul.staff { list-style: none; margin: 0; padding: 0; }
+ul.links li { padding: .13rem 0; font-size: .9rem; }
+ul.staff li { padding: .28rem 0; font-size: .9rem; line-height: 1.3; }
+.sub { color: var(--muted); font-size: .78rem; }
+.hours { display: block; color: var(--muted); font-size: .78rem; }
+
+/* --------------------------------------------------------------- calendar */
+.week { margin-bottom: 1.5rem; }
+.week-label {
+  font-size: .68rem; font-weight: 700; text-transform: uppercase; letter-spacing: .1em;
+  color: var(--muted); margin: 0 0 .25rem; padding-bottom: .22rem;
+  border-bottom: 1px solid var(--rule);
+}
+.week-label a { color: inherit; }
+.week.current .week-label { color: var(--lz-lecture); }
+.week.current { background: var(--accent-bg); border-radius: 5px;
+                padding: .35rem .6rem .1rem; margin-left: -.6rem; margin-right: -.6rem; }
+
+/* The week is one grid and rows are `display: contents`, so the three
+   tracks line up across every row and the due track sizes to its content
+   (collapsing to nothing in a week with no deadlines). */
+.rows { display: grid; grid-template-columns: 6.2rem minmax(0, 1fr) auto; }
+.row { display: contents; }
+.row > * { border-bottom: 1px solid var(--rule-faint); padding: .24rem 0; }
+.rows > .row:last-child > * { border-bottom: 0; }
+.when { color: var(--muted); font-size: .8rem; white-space: nowrap; padding-right: .9rem; }
+.what { padding-right: .9rem; }
+.entry { padding: .08rem 0; }
+.entry > a { font-weight: 500; }
+.lz {
+  display: inline-block; font-size: 10.5px; font-weight: 700; line-height: 1.65;
+  text-transform: uppercase; letter-spacing: .045em;
+  padding: 0 .45em; border-radius: 3px; margin-right: .18em;
+  color: #fff; background: var(--lz-reading); white-space: nowrap; vertical-align: 1px;
+}
+.lz-lecture { background: var(--lz-lecture); }
+.lz-lab     { background: var(--lz-lab); }
+.lz-disc    { background: var(--lz-disc); }
+.lz-due     { background: var(--lz-due); }
+.lz-exam    { background: var(--lz-exam); }
+.lz-reading { background: var(--lz-reading); }
+.lz-holiday { background: var(--lz-holiday); }
+
+.xtra { font-size: .78rem; color: var(--muted); margin-left: .15em; }
+.xtra::before { content: "("; }
+.xtra::after  { content: ")"; }
+.reading { font-size: .78rem; color: var(--muted); margin-left: .3em; white-space: nowrap; }
+.reading::before { content: "· "; }
+.note { font-size: .82rem; color: var(--muted); margin-top: .02rem; }
+@media (max-width: 62rem) {
+  .rows { grid-template-columns: 5.6rem minmax(0, 1fr); }
+  .due { grid-column: 2; }
+}
