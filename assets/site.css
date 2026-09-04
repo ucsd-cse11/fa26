@@ -48,8 +48,7 @@ code { font: 0.86em/1 var(--mono); background: var(--rule-faint); padding: .1em 
 .rail { position: sticky; top: 2.2rem; align-self: start; }
 @media (max-width: 62rem) {
   .page { grid-template-columns: 1fr; gap: 2rem; padding: 1.2rem 1rem 4rem; }
-  .rail { position: static; order: 2; }
-  .cal-col { order: 1; }
+  .rail { position: static; }
 }
 
 /* -------------------------------------------------------------- left rail */
