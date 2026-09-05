@@ -147,6 +147,11 @@ typst 0.15.0 in THIS project's HTML export; correct it when it's wrong.
   week-block(w, items, current: false)
   entry(s)                          one schedule row
   lozenge(kind, body)               <strong class="lz lz-KIND">
+  link-out(url, body)               a link that opens in a new tab.
+                                    #link has no target: param, so this is
+                                    the only way. URL strings only -- it
+                                    asserts if you hand it a <label>, since
+                                    in-site links should stay in the tab.
   week-of(date, start)              1-based week number
 
   Raw HTML, when the vocabulary doesn't have what you need:

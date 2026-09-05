@@ -11,6 +11,16 @@
 
 #let lozenge(kind, body) = html.elem("strong", attrs: (class: "lz lz-" + kind), body)
 
+// Like #link, but opens in a new tab. Typst's link() has no target: param,
+// so this drops to a raw anchor. Explicit at the call site rather than a
+// show rule over every http:// destination, so "leaves the site" stays a
+// decision. Styled identically to an ordinary link for now.
+#let link-out(dest, body) = {
+  assert(type(dest) == str,
+    message: "link-out: expects a URL string; use link() for in-site labels")
+  html.elem("a", attrs: (href: dest, target: "_blank", rel: "noopener noreferrer"), body)
+}
+
 #let week-of(date, start) = calc.floor((date - start).days() / 7) + 1
 
 #let _fmt-day(date) = date.display("[weekday repr:short], [month repr:short] [day padding:none]")
@@ -76,14 +86,13 @@
   #body
 ]
 
-#let rail(term, intro, doodle, quick-links, policies, staff) = {
+#let rail(term, doodle, quick-links, staff) = {
   html.elem("aside", attrs: (class: "rail"))[
     #html.elem("div", attrs: (class: "brand"))[
       #html.elem("div", attrs: (class: "course"), term.course)
       #html.elem("div", attrs: (class: "term"), term.name)
       #html.elem("div", attrs: (class: "coursetitle"), term.title)
     ]
-    #html.elem("div", attrs: (class: "intro"), intro)
     #if doodle != none {
       html.elem("div", attrs: (class: "doodle"), image(doodle))
     }
@@ -108,11 +117,6 @@
             #html.elem("span", attrs: (class: "hours"), p.hours)
           ]
         ]
-      ]
-    ]
-    #_rail-section("Policies")[
-      #html.elem("ul", attrs: (class: "links"))[
-        #for l in policies [#html.elem("li")[#link(l.href, l.label)]]
       ]
     ]
   ]
