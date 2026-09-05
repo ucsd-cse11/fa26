@@ -1,0 +1,197 @@
+TYPST CHEATSHEET -- CSE 11 course site                    /typst.txt
+Agent-written (Claude), unreviewed. Everything below was checked against
+typst 0.15.0 in THIS project's HTML export; correct it when it's wrong.
+
+===============================================================================
+0. THE LOOP
+===============================================================================
+  Edit any .typ or assets/site.css, reload the page. That's it.
+  The server rebuilds on request when a source is newer than the build.
+
+  python3 build.py     one-shot build into site/
+  python3 serve.py     the dev server (already running in tmux session "site")
+  tmux attach -t site  watch build errors scroll by
+
+  A build error means the page does NOT update -- the old HTML stays.
+  If a change isn't showing, look at the tmux window first.
+
+===============================================================================
+1. MARKUP THAT WORKS (verified, with the HTML it emits)
+===============================================================================
+  = Heading            -> <h2>     NOTE: shifted down one. = is h2, == is h3.
+  == Sub               -> <h3>
+  = Heading <anchor>   -> <h2 id="anchor">      label becomes the id
+
+  *bold*               -> <strong>
+  _italic_             -> <em>
+  `code`               -> <code>
+  #underline[x] #strike[x] #highlight[x] #super[x] #sub[x]
+
+  - item               -> <ul><li>
+    - nested             indent two spaces
+  + item               -> <ol><li>
+  / Term: what it is   -> <dl><dt>Term</dt><dd>what it is</dd>
+
+  #link("https://x")[text]      -> <a href="https://x">text</a>
+  https://x                     bare URLs autolink
+  #link(<anchor>)[text]         -> resolves the path AND the fragment for you
+
+  ```java
+  record Posn(int x, int y) {}
+  ```                  -> <pre><code data-lang="java">, syntax highlighted
+
+  #quote[inline]              -> curly quotes in running text
+  #quote(block: true)[...]    -> <blockquote>
+  #figure(caption: [c])[body] -> <figure> + <figcaption>, auto-numbered
+  #image("f.png", alt: "..")  -> <img>, but see GOTCHAS
+  $x^2 + 1$                   -> real MathML
+  text \                      -> <br>   (backslash at end of line)
+  Footnote#footnote[note]     -> <sup> link + an endnotes section at the end
+  // comment                  not emitted
+  /* block comment */
+
+  -- – ... ~     en dash, em dash, ellipsis, non-breaking space
+  \* \_ \#       escape a character that would otherwise be markup
+
+===============================================================================
+2. WHAT SILENTLY DOES NOTHING (the important half)
+===============================================================================
+  The rule: content-level things survive HTML export. Layout and visual
+  styling do not -- Typst has no page to lay out. Style with CSS instead.
+
+  #set text(size: 20pt)     DROPPED, no warning
+  #text(fill: red)[x]       DROPPED -- the text survives, the color doesn't
+  #line(length: 100%)       DROPPED, with a warning in the build log
+  #v() #h() #pagebreak()    meaningless here
+  #place #align #pad #grid  paged-layout tools; don't reach for them
+
+  These DO work, because they transform content rather than paint it:
+  #show "foo": strong       show rules
+  #let / #for / #if         everything in section 3
+
+  If you want it to look different, add a class in lib/site.typ and a rule
+  in assets/site.css. That is the only styling channel.
+
+===============================================================================
+3. SCRIPTING
+===============================================================================
+  #let x = 5                          bind
+  #let f(a, b: 2) = a + b             function, b is a named arg
+  #x  #f(1)  #calc.pow(2, 3)          splice a value into text
+  #for s in xs [ ... #s.title ... ]   loop, body is markup
+  #if cond [yes] else [no]
+  #let d = (key: "v", n: 1)           dictionary
+  d.key   d.at("key", default: none)  "key" in d
+  #let a = (1, 2, 3)                  array
+  a.map(..) .filter(..) .sorted(key: ..) .rev() .dedup() .len() .join(", ")
+
+  CONTENT IS A VALUE. This is the thing that makes course.typ work:
+    (title: [Data that *travels* together])
+  Markup goes straight into a dictionary field. No strings, no escaping.
+  str vs content matters: "x" + "y" concatenates, [x] + [y] does not --
+  use [#a #b] to join content.
+
+  datetime(year: 2026, month: 9, day: 22)
+  (d1 - d2).days()                    duration
+  d.display("[month repr:short] [day padding:none]")
+  d.ordinal()                         for sorting
+
+===============================================================================
+4. THIS SITE -- WHERE THINGS LIVE
+===============================================================================
+  course.typ      the course as data. Sessions, staff, links, term dates.
+                  Deliberately has NO html.elem, so `typst eval` can still
+                  read it in paged mode (for a future .ics feed etc).
+                  Edit this for content.
+  syllabus.typ    the syllabus prose, as `#let syllabus = [...]`.
+  lib/site.typ    the vocabulary. ALL markup is emitted here.
+                  Edit this to change what the HTML looks like.
+  site.typ        the list of pages. One #document per page.
+  assets/site.css layout, lozenge colors, dark mode.
+  build.py        runs typst, then hoists <link>/<script> into <head>
+                  (Typst 0.15 can't write to <head>; that's its only job).
+
+===============================================================================
+5. THIS SITE -- ADDING TO THE CALENDAR
+===============================================================================
+  One entry in course.typ's `sessions` array:
+
+    (date: d(10, 6), kind: "lecture", n: 5, title: [Unions],
+     href: "lectures/05.html",
+     extras: ((label: [slides], href: "assets/lec/05.pdf"),),
+     reading: [ch. 5],
+     note: [One line under the title.]),
+
+  date      required.  d(month, day) is the shorthand at the top of the array
+  kind      required.  lecture | lab | disc | due | exam | reading | holiday
+                       picks the lozenge color AND the lane
+  title     required.  content, so markup and `code` are fine
+  n         optional.  the number in the lozenge ("Lecture 5")
+  href      optional.  no href = plain text, no link
+  extras    optional.  array of (label:, href:) -- the small (slides) links
+                       ONE-ELEMENT ARRAYS NEED THE TRAILING COMMA: (x,)
+  reading   optional.  the "· ch. 5" pointer
+  note      optional.  a dimmed line under the entry
+
+  kind: "due" is what sends an entry to the right-hand lane.
+  Weeks are computed from term.start -- no week field, don't add one.
+
+===============================================================================
+6. THIS SITE -- FUNCTIONS IN lib/site.typ
+===============================================================================
+  shell(left, right)                page frame; emits the stylesheet link.
+                                    Every page must go through this or it
+                                    renders unstyled.
+  rail(term, doodle, quick-links, staff)      the left column
+  calendar(term, sessions)          the whole reverse-chronological calendar
+  week-block(w, items, current: false)
+  entry(s)                          one schedule row
+  lozenge(kind, body)               <strong class="lz lz-KIND">
+  week-of(date, start)              1-based week number
+
+  Raw HTML, when the vocabulary doesn't have what you need:
+    html.elem("div", attrs: (class: "x", id: "y"))[content]
+  Keep these in lib/site.typ, not in course.typ or a page.
+
+===============================================================================
+7. ADDING A PAGE
+===============================================================================
+  In site.typ:
+
+    #document("staff.html", title: [Staff], description: [...])[
+      #shell(rail(term, doodle, quick-links, staff),
+             html.elem("main", body))
+    ]
+
+  #document can also emit PDF from the same content:
+    #document("syllabus.pdf", title: [Syllabus])[#syllabus]
+
+  #asset("path/in/site", read("path/in/repo", encoding: none))
+  copies a file through verbatim (that's how site.css and this file get out).
+
+  LINK BY LABEL, NOT BY PATH. #link(<grading>) figures out
+  "syllabus.html#grading" on its own, and a label that doesn't exist is a
+  BUILD ERROR rather than a dead link. Strings work too but aren't checked.
+
+===============================================================================
+8. GOTCHAS
+===============================================================================
+  Headings shift: = is h2. There is no h1 on the page right now.
+
+  One-element arrays need a trailing comma:  (x,)  not  (x)
+  Without it you get the value, not an array, and get a confusing error.
+
+  #image() inlines the file as a base64 data URI -- it does not link to it.
+  Fine for a small doodle, terrible for anything big. For a real image,
+  #asset it and emit html.elem("img", attrs: (src: "...")).
+
+  Fenced code gets inline color styles baked in by Typst's highlighter, so
+  code blocks do NOT follow the site's dark mode.
+
+  #table with no table.header emits <table><tr> with no <thead>.
+
+  "html export is under active development" on every build is expected.
+  So is "bundle export is experimental". Neither is your fault.
+
+  context: some functions (target(), counters, anything that depends on
+  where it ends up) need `#context expr` around them.
