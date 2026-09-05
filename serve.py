@@ -14,17 +14,33 @@ from pathlib import Path
 HERE = Path(__file__).resolve().parent
 SITE = HERE / "site"
 PORT = 8003
-SOURCES = ["course.typ", "site.typ", "lib", "assets", "build.py"]
+DEPS = HERE / ".deps.json"
+# Used only before the first build has reported its dependencies.
+FALLBACK = ["*.typ", "lib/*.typ", "assets/*"]
+
+
+def sources():
+    """Every file the last build actually read, per typst's own --deps.
+
+    Asking typst beats maintaining a list here: a new chapter, a new
+    import, or an #asset read is picked up without touching this file.
+    """
+    if DEPS.exists():
+        import json
+        inputs = json.loads(DEPS.read_text()).get("inputs", [])
+        paths = [HERE / p for p in inputs]
+    else:
+        paths = [f for pat in FALLBACK for f in HERE.glob(pat)]
+    return paths + [HERE / "build.py"]
 
 
 def newest_source() -> float:
     latest = 0.0
-    for name in SOURCES:
-        p = HERE / name
-        paths = p.rglob("*") if p.is_dir() else [p]
-        for f in paths:
-            if f.is_file():
-                latest = max(latest, f.stat().st_mtime)
+    for f in sources():
+        if f.is_file():
+            latest = max(latest, f.stat().st_mtime)
+        else:
+            return float("inf")  # a listed input vanished: force a rebuild
     return latest
 
 

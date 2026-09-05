@@ -36,6 +36,7 @@ def hoist_head(html: str) -> str:
 def main():
     r = subprocess.run(
         ["typst", "compile", "--features", "html,bundle", "-f", "bundle",
+         "--deps", str(HERE / ".deps.json"),
          str(HERE / "site.typ"), str(SITE)],
         cwd=HERE, capture_output=True, text=True)
     sys.stderr.write(r.stderr)
