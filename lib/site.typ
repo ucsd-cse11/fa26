@@ -103,13 +103,19 @@
   #body
 ]
 
-#let rail(term, doodle, quick-links, staff, base: "") = {
+#let rail(term, doodle, quick-links, staff, base: "", intro: none) = {
   html.elem("aside", attrs: (class: "rail"))[
     #html.elem("div", attrs: (class: "brand"))[
       #html.elem("div", attrs: (class: "course"), term.course)
       #html.elem("div", attrs: (class: "term"), term.name)
       #html.elem("div", attrs: (class: "coursetitle"), term.title)
     ]
+    // A short note under the course title — "under construction", a room
+    // change, whatever is true this week. site.css has styled .intro since
+    // before anything emitted it.
+    #if intro != none {
+      html.elem("div", attrs: (class: "intro"), intro)
+    }
     #if doodle != none {
       html.elem("div", attrs: (class: "doodle"), image(doodle))
     }
