@@ -21,6 +21,23 @@
   html.elem("a", attrs: (href: dest, target: "_blank", rel: "noopener noreferrer"), body)
 }
 
+// Pages below the top level (pa/01.html, lectures/01.html) need in-site hrefs
+// written relative to *them*, not to the site root. `base` is the way back up
+// ("../" one level down) and every page passes its own; the default "" is the
+// top level, where nothing changes.
+//
+// Only raw strings need this. #link(<label>) is resolved by typst's bundle
+// export, which already knows where both ends live, so labels are left alone —
+// as are absolute URLs, scheme-relative ones, root-relative paths and bare
+// fragments. mailto: and tel: count as absolute, which is why this matches a
+// scheme rather than looking for "://".
+#let _absolute = regex("^([a-zA-Z][a-zA-Z0-9+.\-]*:|//|/|#)")
+#let _rebase(base, href) = {
+  if base == "" or type(href) != str { href }
+  else if href.match(_absolute) != none { href }
+  else { base + href }
+}
+
 #let week-of(date, start) = calc.floor((date - start).days() / 7) + 1
 
 #let _fmt-day(date) = date.display("[weekday repr:short], [month repr:short] [day padding:none]")
@@ -86,7 +103,7 @@
   #body
 ]
 
-#let rail(term, doodle, quick-links, staff) = {
+#let rail(term, doodle, quick-links, staff, base: "") = {
   html.elem("aside", attrs: (class: "rail"))[
     #html.elem("div", attrs: (class: "brand"))[
       #html.elem("div", attrs: (class: "course"), term.course)
@@ -100,7 +117,7 @@
       #html.elem("ul", attrs: (class: "links"))[
         #for l in quick-links [
           #html.elem("li")[
-            #link(l.href, l.label)
+            #link(_rebase(base, l.href), l.label)
             #if l.at("note", default: none) != none {
               html.elem("span", attrs: (class: "sub"), l.note)
             }
@@ -112,7 +129,7 @@
       #html.elem("ul", attrs: (class: "staff", id: "staff"))[
         #for p in staff [
           #html.elem("li")[
-            #if p.href != none [#link(p.href, p.name)] else [#p.name]
+            #if p.href != none [#link(_rebase(base, p.href), p.name)] else [#p.name]
             #html.elem("span", attrs: (class: "sub"), p.role)
             #html.elem("span", attrs: (class: "hours"), p.hours)
           ]
@@ -124,7 +141,7 @@
 
 // --------------------------------------------------------------------- shell
 
-#let shell(left, right) = {
-  html.elem("link", attrs: (rel: "stylesheet", href: "assets/site.css"))
+#let shell(left, right, base: "") = {
+  html.elem("link", attrs: (rel: "stylesheet", href: _rebase(base, "assets/site.css")))
   html.elem("div", attrs: (class: "page"))[#left #right]
 }

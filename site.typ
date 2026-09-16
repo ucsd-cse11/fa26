@@ -1,5 +1,6 @@
 #import "course.typ": term, doodle, quick-links, staff, sessions
 #import "syllabus.typ": syllabus
+#import "assignments/pa1.typ": pa1
 
 #import "lib/site.typ": shell, rail, calendar
 
@@ -17,6 +18,19 @@
   #shell(
     rail(term, doodle, quick-links, staff),
     html.elem("main", syllabus)
+  )
+]
+
+// A page one directory down. `base` is how far back up to the site root, and
+// both shell and rail need it: shell carries the stylesheet link, rail carries
+// every href course.typ supplies as a plain string.
+#document("pa/01.html",
+  title: [PA 1],
+  description: [#term.course, #term.name: PA 1])[
+  #shell(
+    rail(term, doodle, quick-links, staff, base: "../"),
+    html.elem("main", pa1),
+    base: "../",
   )
 ]
 
