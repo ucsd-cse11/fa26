@@ -109,6 +109,10 @@ ul.staff li { padding: .28rem 0; font-size: .9rem; line-height: 1.3; }
 .lz-exam    { background: var(--lz-exam); }
 .lz-reading { background: var(--lz-reading); }
 .lz-holiday { background: var(--lz-holiday); }
+.lz-who {
+  background: transparent; color: var(--muted);
+  box-shadow: inset 0 0 0 1px var(--rule);
+}
 
 .xtra { font-size: .78rem; color: var(--muted); margin-left: .15em; }
 .xtra::before { content: "("; }

@@ -10,14 +10,13 @@
   Welcome to CSE11!
   
 ]
-
 #let term = (
   course: "CSE 11",
   name: "Fall 2026",
   title: "Introduction to Programming and Computational Problem-Solving",
-  start: datetime(year: 2026, month: 9, day: 22),   // Tuesday of week 1
+  start: datetime(year: 2026, month: 9, day: 28),   // Monday of week 1
   weeks: 10,
-  weeks-descending: true,   // reverse-chronological; flip for forward order
+  weeks-descending: false,   // reverse-chronological; flip for forward order
   // Build-time "now". datetime.today() makes the current-week highlight
   // follow the clock, at the cost of a non-reproducible build; pin a date
   // here to make it deterministic (tests do this).
@@ -46,8 +45,44 @@
 
 #let d(m, day) = datetime(year: 2026, month: m, day: day)
 
+
+/*
+┌─────────┬──────┬──────────────────────────────────────────────────┬─────────────────────────────────────────────────────────────┐
+│  field  │ req? │                       type                       │                           effect                            │
+├─────────┼──────┼──────────────────────────────────────────────────┼─────────────────────────────────────────────────────────────┤
+│ date    │ yes  │ datetime (use the d(month, day) helper)          │ picks the week and the row                                  │
+├─────────┼──────┼──────────────────────────────────────────────────┼─────────────────────────────────────────────────────────────┤
+│ kind    │ yes  │ string                                           │ lozenge color + which lane                                  │
+├─────────┼──────┼──────────────────────────────────────────────────┼─────────────────────────────────────────────────────────────┤
+│ title   │ yes  │ content [...]                                    │ the main text                                               │
+├─────────┼──────┼──────────────────────────────────────────────────┼─────────────────────────────────────────────────────────────┤
+│ n       │ no   │ int                                              │ appended to the label: Lecture 1. Omit → bare Lecture       │
+├─────────┼──────┼──────────────────────────────────────────────────┼─────────────────────────────────────────────────────────────┤
+│ who     │ no   │ content or string, default none                  │ dimmed lozenge, after the kind lozenge                      │
+├─────────┼──────┼──────────────────────────────────────────────────┼─────────────────────────────────────────────────────────────┤
+│ href    │ no   │ string, default none                             │ makes the title a link                                      │
+├─────────┼──────┼──────────────────────────────────────────────────┼─────────────────────────────────────────────────────────────┤
+│ extras  │ no   │ array of (label: content, href: str), default () │ small parenthesized links after the title — (slides) (code) │
+├─────────┼──────┼──────────────────────────────────────────────────┼─────────────────────────────────────────────────────────────┤
+│ reading │ no   │ content, default none                            │ inline, muted, prefixed ·                                   │
+├─────────┼──────┼──────────────────────────────────────────────────┼─────────────────────────────────────────────────────────────┤
+│ note    │ no   │ content, default none                            │ muted line below the entry                                  │
+└─────────┴──────┴──────────────────────────────────────────────────┴─────────────────────────────────────────────────────────────┘
+*/
+
 #let sessions = (
-  // week 1
-  (date: d(9, 24), kind: "lecture", n: 1, title: [Programs and values],
-   href: none),
+  (date: d(9, 24), kind: "lecture", n: 0, who: "Joe", title: [Programs and values], href: none),
+
+  (date: d(9, 28), kind: "lecture", n: 1, who: "Ben", title: [Programs and values], href: none),
+  (date: d(9, 29),  kind: "due", href: "https://us.prairielearn.com/pl/course_instance/232999/instructor/assessment/2732478", title: [Ch01, Ch02]),
+  (date: d(9, 29), kind: "lecture", n: 2, who: "Joe", title: [Records and methods], href: none),
+  (date: d(9, 30), kind: "lecture", n: 2, who: "Ben", title: [Records and methods], href: none),
+  (date: d(10, 1), kind: "lecture", n: 3, who: "Joe", title: [`main` and `java`], href: none),
+  (date: d(10, 2), kind: "due", title: [PA0], href: "assignments/pa0.html"),
+
+  (date: d(10, 5), kind: "lecture", n: 3, who: "Ben", title: [`main` and `java`], href: none),
+  (date: d(10, 9), kind: "due", title: [PA1], href: "assignments/pa1.html"),
+  
+  
+  
 )

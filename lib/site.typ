@@ -42,13 +42,14 @@
 
 #let _fmt-day(date) = date.display("[weekday repr:short], [month repr:short] [day padding:none]")
 
-// One schedule entry: lozenge, linked title, trailing small links, an
-// optional one-line note, an optional reading pointer.
+// One schedule entry: lozenge, optional who-lozenge, linked title, trailing
+// small links, an optional one-line note, an optional reading pointer.
 #let entry(s) = {
   let name = _kind-label.at(s.kind, default: "Item")
   let tag = if "n" in s { name + " " + str(s.n) } else { name }
   html.elem("div", attrs: (class: "entry"))[
     #lozenge(s.kind, tag)
+    #if s.at("who", default: none) != none { lozenge("who", s.who) }
     #if s.at("href", default: none) != none [#link(s.href, s.title)] else [#s.title]
     #for e in s.at("extras", default: ()) [
       #html.elem("a", attrs: (class: "xtra", href: e.href), e.label)

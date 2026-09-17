@@ -2,6 +2,8 @@
 
 #let pa1 = [
 
+  *This is a draft until officially released and this notice is removed*
+
   = PA 1
 
 == Analog Clock
