@@ -222,6 +222,25 @@
 
   == In-class Professionalism
 
+  === Devices
+
+  To a large degree, you are responsible for managing your time, attention, and
+  learning in lecture, and I hesitate to make policies that attempt to govern or
+  restrict your choices with respect to note taking or device use. However,
+  lecture is a communal space, and your actions can affect others' learning. In
+  particular, what you have on your screen may be unavoidably in the field of
+  view of other students. Because of this, you are responsible for a fragment of
+  the attention of everyone in a cone of space behind you. With this in mind,
+  the policy for lecture is that if you use a device, you must have
+  lecture-related content onscreen. There is even research that shows that the
+  content of screens in the classroom, even quite far away, can have a
+  detrimental effect on learning. If you cannot resist checking social media,
+  playing a game, or doing other off-topic tasks during lecture, sit in the back
+  2 rows so that you are only having an effect on your own attention, or the
+  attention of others with a similar mindset.
+  
+  === Collaboration
+
   Some lecture and discussion work may be highly collaborative, and designed to
   encourage communication between students. Some of the activities will have you
   talk to other students, or exchange code, ideas, or commands with other
