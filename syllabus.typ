@@ -3,6 +3,9 @@
 
 #let syllabus = [
 
+  *This syllabus is a draft until the first lecture happens and this notice is
+  removed.*
+
   = Grading <grading>
 
   Your grade will be calculated from three categories:
@@ -23,19 +26,26 @@
   make sure you come to class with something to talk about, and the lectures and
   discussions are where you'll talk about them with others and do the talking.
 
+  Each week there are 8 points of social learning credit available:
+
+  - 2 for each lecture (total 4)
+  - 1 for attending discussion
+  - 2 for completing readings
+  - 1 for significant interaction on Piazza or attending office hours
+
   == Assignments
 
-  We plan 6 assignments (due Friday afternoons in weeks 1, 2, 4, 6, 8, and 10)
-  that will have a mix of programming and writing about programs.
+  We plan 6 assignments (due Fridays in weeks 1, 2, 4, 6, 8, and 10) that will
+  have a mix of programming and writing about programs.
 
-  Each assignment will have an *initial deadline* and a *review/resubmission
+  Most assignments will have an *initial deadline* and a *review/resubmission
   deadline*. The review/resubmission deadline will be around 2 weeks after the
   initial deadline. It will have a mix of similar and new tasks that you can do
   to make up for lost credit on the first submission, and tasks that involve
   reviewing other students' work.
 
   This is the only late policy for assignments – if you miss the initial
-  deadline you can resubmit at the resubmission deadline.
+  deadline you can resubmit the modified work at the resubmission deadline.
 
   Initial submissions are graded out of 4 points:
 
@@ -50,6 +60,76 @@
   resubmission is *3*. For a score of *2* or *3* on the initial submission, the
   resubmission score can reach *4*.
 
+  == Exams
+
+  We will have 3 exams during the quarter, flexibly scheduled through the UCSD
+  CBTF, in weeks 3, 6, and 9. In *finals week*, you will have the opportunity to
+  *retry* any of the exams – the retries will have different questions that test
+  similar content.
+
+  Exams during the quarter are 45m long; you can reserve a *single* final exam
+  retry slot for 2h, in which you attempt any or all of the retry exams.
+
+  Exams are graded out of 4 points. The sum of question points may add up to
+  more than 4; we will publish the point-specific cutoffs after we finish
+  grading each exam. Exams will have a mix of questions, with some involving
+  programming in Java without access to the internet or agentic programming
+  tools.
+
+  == Grade Categories and Philosophy
+
+  A slogan for the course's grading policy is *High Standards, Multiple Tries*.
+  Most course components have chances to make up or otherwise improve your
+  score; most students make use of some of these opportunities, and few students
+  submit full-scoring work on all of their first attempts (the course is
+  designed to be challenging). In addition, we think that *all* of the course
+  components are important. To earn a A, B, or C in the course, you need to
+  achieve A, B, or C level scores in *all three* categories:
+
+  - For an *A*, score:
+    - *62* or more social learning points, and
+    - *21* or more assignment points, and
+    - *10* or more exam points
+  - For a *B*, score:
+    - *54* or more social learning points, and
+    - *18* or more assignment points, and
+    - *8* or more exam points
+  - For a *C*, score:
+    - *48* or more social learning points, and
+    - *15* or more assignment points, and
+    - *6* or more exam points
+
+  D grades are not given (if the C thresholds are not reached, a F or NP is the
+  final course grade). Other pluses and minuses will be given around the
+  boundary of these scores by consistent policy not published in advance. The
+  plus/minus policy will *not* consider exam retries, so if you have A-level
+  exam credit after the three in-quarter exams, there is no grade incentive to
+  retry exams.
+
+  Requests to change this grading policy (for a specific student or class-wide)
+  will be denied with a link to this syllabus section. Consider this: we may, as
+  instructors, decide for academic reasons that the most accurate way of
+  assigning letter grades in the class needs to change. However, it would be
+  inappropriate for us to do so in response to student requests: that could
+  create an appearance that we give students the grades they ask for rather than
+  the grades that represent their achievement.
+
+  == Make-up Work, Missed Work, and Special Circumstances
+
+  Our intent is that no extensions or make-up work is given outside of these
+  policies. If you miss an assignment, use the resubmission deadline. You can
+  miss many lectures, discussions, or readings with no impact on your course
+  grade, so no make-up options are given for missing those. If you miss an exam,
+  there are retry opportunities in finals week. These are all designed to
+  naturally handle the case where you miss up to a week of the course with no
+  special syllabus changes. Do not send us medical records or other
+  documentation to justify absences.
+
+  If you do miss more than a week of work in the course, or if you want help
+  applying these policies to a specific situation you find yourself in, or if
+  there is an accommodation you need not covered by these polices, please email
+  both instructors so we can advise.
+    
   = 🤖 AI, CSE-011, and You <ai-tool-policy>
   
   == AI and Writing
@@ -105,5 +185,73 @@
   everything to do with the changes that happen inside your body. Many people
   can run the same miles on the same road and get the benefits from it, despite
   them all doing the same work that a machine (the scooter) could have done. ]
+
+  Programming is also necessarily collaborative, and often builds on past work.
+  As a general rule, you can use code that we provide or that you develop with
+  other students in this class. If you use code that you developed with other
+  students, got from Piazza, or got from the internet, say so, including the
+  source and which students you worked with in CREDITS.txt. All of the writing
+  in assignments (e.g. in open-ended written questions) must be your own.
+
+  If you use an AI agent or other similar tool to help write code, disclose it!
+  In CREDITS.txt include a few sentences about which tools you used and which
+  specific parts of the assignment they helped with.
+
+  If you don't include a CREDITS.txt and it's clear you included code from
+  others or from an AI tool, you may lose credit, have to do a resubmission, or
+  get a 0 on the assignment. Repeated or severe violations can be escalated
+  to reports of academic integrity violations.
+
+  = Other Policies
+
+  == Exam Integrity
+
+  It is a violation of academic integrity to share details of your exam with
+  others until after you receive your grade for it. Keep in mind that the exams
+  are randomized to discourage casual cheating, so your exam may not be the same
+  one that others see. It is a violation of academic integrity to communicate
+  with anyone other than the official proctors during the exam, or to use
+  devices other than the ones you are using to complete the exam.
+
+  == Lecture and Discussion Integrity
+
+  It is a violation of academic integrity to submit work for someone else in
+  lecture or discussion, when handouts or other attendance mechanisms are used.
+  You also should not try to submit handouts or worksheets for sessions you did
+  not attend in person.
+
+  == In-class Professionalism
+
+  Some lecture and discussion work may be highly collaborative, and designed to
+  encourage communication between students. Some of the activities will have you
+  talk to other students, or exchange code, ideas, or commands with other
+  students, and write down what happened.
   
+  In all of this communication, remember to be polite, professional, and focus
+  on the work. A huge part of the job of a working software professional or
+  researcher is professional and clear communication.
+  
+  Some tricks for this: avoid statements that reference the author of the code,
+  frame negative feedback as possible improvements or ways your expectations
+  were violated, and take responsibility for anything you don't understand.
+  
+  Examples:
+  
+  - Don't say “You were wrong here: ...” Instead say “On line I expect the
+  condition to be true but I think it will be false because XYZ ... we could
+  demonstrate that by doing ABC.”
+  - Don't say “It seems like you don't know about...”, instead say “On line
+  10-12, these 3 lines could be shortened into one line using method chaining:
+  ....” And use some judgment: it's likely that some of the advice you'd give is
+  helpful and constructive, and some of it is just showing off.
+  - Don't say “That conditional is ugly:...” Instead say “I find it easier to
+  read these conditions when they are written as .... because ...” If you don't
+  have a good explanation to put after the “because”, how do you know it's a
+  good suggestion?
+  - Don't say “You wrote lines 20-24 very confusingly.” Instead say “I'm having
+  trouble understanding lines 20-24. It would help me to work through an example
+  of how that part is supposed to work”
+
+
+
 ]
