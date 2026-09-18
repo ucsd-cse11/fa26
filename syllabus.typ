@@ -272,5 +272,27 @@
   of how that part is supposed to work”
 
 
+  == Student Conduct Policy
+
+  UC San Diego strives to maintain a climate of fairness, cooperation, and professionalism. It is expected that you practice basic principles, including, but not limited to, mutual respect, civility, and decency, towards maintaining an atmosphere free of abusive or demeaning treatment. Non-academic student misconduct will be reported to the Center for Student Accountability, Growth, and Education for violating UC San Diego's Principles of Community.
+
+  == Diversity and Inclusion
+
+  We are committed to fostering a learning environment for this course that supports a diversity of thoughts, perspectives, and experiences while respecting your identities (including race, ethnicity, heritage, gender, sex, class, sexuality, religion, ability, age, educational background, etc.). Our goal is to create an inclusive learning environment where all students can feel comfortable and thrive. Accordingly, the instructional staff will make a concerted effort to be welcoming and inclusive to the wide range of students in this course. If there is some way we can help you feel more included, please let one of the course staff know (in person, via email/Piazza, or even using an anonymous note).
+
+  We also expect that you, as a student in this course, will honor and respect your classmates, abiding by the UC San Diego Principles of Community. Please understand that others' backgrounds, perspectives, and experiences may be different than your own, and help us build an environment where everyone is welcomed and respected.
+
+  If you experience any sort of harassment or discrimination, please contact an instructor as soon as possible. If you prefer to speak with someone outside of the course, please contact the Office for the Prevention of Harassment and Discrimination.
+
+
+  == Students with Disabilities
+
+  We aim to create an environment in which all students can succeed. If you have a disability, please contact the Office for Students with Disabilities (OSD) and discuss appropriate accommodations as soon as possible. We will work to provide you with the accommodations you need, but you must first provide a current Authorization for Accommodation (AFA) letter issued by the OSD. You are required to present your AFA letters to the instructor and to the department's OSD Liaison so that accommodations may be arranged.
+  
+  
+  == Basic Needs/Food Insecurities
+  
+  If you are experiencing any insecurities related to basic needs (food, housing, financial resources), there are resources available on campus to help, including The Hub and the Triton Food Pantry. Please visit The Hub for more information.
+
 
 ]
