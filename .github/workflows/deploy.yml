@@ -1,0 +1,71 @@
+# Build the course site and publish it to https://ucsd-cse11.github.io/fa26/.
+#
+# This repo is named for the quarter, so its project Pages site *is* the
+# quarter's URL — it publishes itself with the built-in GITHUB_TOKEN and needs
+# no deploy key, PAT, or any other credential. That is the whole reason the
+# repo is named `fa26` rather than `site-src`.
+#
+# Editions freeze by never touching this repo again once the quarter ends;
+# winter gets its own repo, publishing to /wi27/ the same way.
+name: Deploy site
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Let a run finish rather than cancelling it: a cancelled deploy can leave the
+# published site on an older build with nothing to say so.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+env:
+  # Pinned deliberately. build.py exists only to work around Typst 0.15 putting
+  # html.elem("link"/"meta"/"script") in <body>, and it compiles with
+  # `--features html,bundle`, both experimental and both liable to change
+  # between releases. A floating version would break the build or, worse,
+  # quietly change the output.
+  TYPST_VERSION: 0.15.0
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install Typst ${{ env.TYPST_VERSION }}
+        run: |
+          set -euo pipefail
+          url="https://github.com/typst/typst/releases/download/v${TYPST_VERSION}/typst-x86_64-unknown-linux-musl.tar.xz"
+          curl -fsSL "$url" | tar -xJ -C /tmp
+          sudo install -m755 /tmp/typst-x86_64-unknown-linux-musl/typst /usr/local/bin/typst
+          typst --version
+
+      - name: Build
+        run: python3 build.py
+
+      # A page is published only if site.typ has a #document call for it, so an
+      # unemitted draft (the syllabus, today) cannot reach the site by accident.
+      # Print what is about to go out, so a surprise is visible in the log.
+      - name: What this will publish
+        run: find site -type f | sort
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
