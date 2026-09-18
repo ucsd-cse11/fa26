@@ -86,14 +86,20 @@ ul.staff li { padding: .28rem 0; font-size: .9rem; line-height: 1.3; }
                 padding: .35rem .6rem .1rem; margin-left: -.6rem; margin-right: -.6rem; }
 
 /* The week is one grid and rows are `display: contents`, so the three
-   tracks line up across every row and the due track sizes to its content
-   (collapsing to nothing in a week with no deadlines). */
+   tracks line up across every row. The due track is content-sized and the
+   1fr before it eats the slack, so the track's RIGHT edge is the grid's
+   right edge in every week; the due lane is right-aligned and puts its
+   lozenge last, so that lozenge is flush right no matter the text width. */
 .rows { display: grid; grid-template-columns: 6.2rem minmax(0, 1fr) auto; }
 .row { display: contents; }
 .row > * { border-bottom: 1px solid var(--rule-faint); padding: .24rem 0; }
 .rows > .row:last-child > * { border-bottom: 0; }
 .when { color: var(--muted); font-size: .8rem; white-space: nowrap; padding-right: .9rem; }
 .what { padding-right: .9rem; }
+.due { text-align: right; }
+/* .lz trails the text here, so its gap belongs on the left; a margin-right
+   would push it off the flush-right edge. */
+.due .lz { margin-right: 0; margin-left: .22em; }
 .entry { padding: .08rem 0; }
 .entry > a { font-weight: 500; }
 .lz {
@@ -122,5 +128,5 @@ ul.staff li { padding: .28rem 0; font-size: .9rem; line-height: 1.3; }
 .note { font-size: .82rem; color: var(--muted); margin-top: .02rem; }
 @media (max-width: 62rem) {
   .rows { grid-template-columns: 5.6rem minmax(0, 1fr); }
-  .due { grid-column: 2; }
+  .due { grid-column: 2; text-align: left; }
 }

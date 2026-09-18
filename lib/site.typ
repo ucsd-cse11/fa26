@@ -44,12 +44,14 @@
 
 // One schedule entry: lozenge, optional who-lozenge, linked title, trailing
 // small links, an optional one-line note, an optional reading pointer.
-#let entry(s) = {
+// `lozenge-last` moves the lozenges to the trailing edge, which is what the
+// right-aligned due lane wants: the lozenge ends up flush right in every week.
+#let entry(s, lozenge-last: false) = {
   let name = _kind-label.at(s.kind, default: "Item")
   let tag = if "n" in s { name + " " + str(s.n) } else { name }
-  html.elem("div", attrs: (class: "entry"))[
-    #lozenge(s.kind, tag)
-    #if s.at("who", default: none) != none { lozenge("who", s.who) }
+  let lz = lozenge(s.kind, tag)
+  let who = if s.at("who", default: none) != none { lozenge("who", s.who) }
+  let body = [
     #if s.at("href", default: none) != none [#link(s.href, s.title)] else [#s.title]
     #for e in s.at("extras", default: ()) [
       #html.elem("a", attrs: (class: "xtra", href: e.href), e.label)
@@ -57,6 +59,9 @@
     #if s.at("reading", default: none) != none {
       html.elem("span", attrs: (class: "reading"), s.reading)
     }
+  ]
+  html.elem("div", attrs: (class: "entry"))[
+    #if lozenge-last [#body #who #lz] else [#lz #who #body]
     #if s.at("note", default: none) != none {
       html.elem("div", attrs: (class: "note"), s.note)
     }
@@ -79,7 +84,7 @@
         html.elem("div", attrs: (class: "row"))[
           #html.elem("div", attrs: (class: "when"), _fmt-day(dt))
           #html.elem("div", attrs: (class: "what"))[#for s in main [#entry(s)]]
-          #html.elem("div", attrs: (class: "due"))[#for s in due [#entry(s)]]
+          #html.elem("div", attrs: (class: "due"))[#for s in due [#entry(s, lozenge-last: true)]]
         ]
       }
     ]
