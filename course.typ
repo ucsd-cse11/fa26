@@ -80,7 +80,10 @@
 
 #let sessions = (
   (date: d(9, 24), kind: "lecture", n: 0, who: "Joe", title: [Programs and values], href: none,
-   extras: ((label: [worksheet], href: "https://ucsd-cse11.github.io/book/fa26/worksheets/definitions-and-values.pdf"),)),
+   extras: (
+     (label: [worksheet], href: "https://ucsd-cse11.github.io/book/fa26/worksheets/definitions-and-values.pdf"),
+     (label: [notes], href: "https://drive.google.com/file/d/1itvjKiYiGCoDTVxVXDfq7mp-Qk5Eq9qI/view?usp=sharing"),
+   )),
 
   (date: d(9, 28), kind: "lecture", n: 1, who: "Ben", title: [Programs and values], href: none,
    extras: ((label: [worksheet], href: "https://ucsd-cse11.github.io/book/fa26/worksheets/definitions-and-values.pdf"),)),
