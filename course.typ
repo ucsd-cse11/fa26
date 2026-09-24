@@ -20,7 +20,7 @@
   // Build-time "now". datetime.today() makes the current-week highlight
   // follow the clock, at the cost of a non-reproducible build; pin a date
   // here to make it deterministic (tests do this).
-  today: datetime(year: 2026, month: 10, day: 7),  // PROTOTYPE: pinned mid-term so the
+  today: datetime.today()
   // current-week highlight is visible. Swap to datetime.today() for real.
 )
 
