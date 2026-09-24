@@ -19,9 +19,13 @@
   weeks-descending: false,   // reverse-chronological; flip for forward order
   // Build-time "now". datetime.today() makes the current-week highlight
   // follow the clock, at the cost of a non-reproducible build; pin a date
-  // here to make it deterministic (tests do this).
-  today: datetime.today()
-  // current-week highlight is visible. Swap to datetime.today() for real.
+  // here to make it deterministic (tests do this). It is only as fresh as the
+  // last build, which is why the deploy workflow also runs daily.
+  //
+  // offset: -8 is San Diego time (PST; during PDT the day turns over at 1am
+  // instead of midnight). CI runs in UTC, and without it an evening build
+  // would already be tomorrow -- Sunday night would highlight the next week.
+  today: datetime.today(offset: -8)
 )
 
 #let doodle = none   // path to an image, or none

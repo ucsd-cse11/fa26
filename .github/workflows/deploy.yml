@@ -13,6 +13,12 @@ on:
   push:
     branches: [main]
   workflow_dispatch:
+  # Daily rebuild, because the current-week highlight is computed at build time
+  # (course.typ, `today`) and would otherwise freeze at the last push. 09:00
+  # UTC is 1-2am in San Diego, just after the day turns over there. GitHub can
+  # start scheduled runs late, and disables them after 60 days with no commits.
+  schedule:
+    - cron: "0 9 * * *"
 
 permissions:
   contents: read
