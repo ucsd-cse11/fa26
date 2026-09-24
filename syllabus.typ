@@ -3,9 +3,6 @@
 
 #let syllabus = [
 
-  *This syllabus is a draft until the first lecture happens and this notice is
-  removed.*
-
   = Grading <grading>
 
   Your grade will be calculated from three categories:

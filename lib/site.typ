@@ -113,8 +113,10 @@
 #let rail(term, doodle, quick-links, staff, base: "", intro: none) = {
   html.elem("aside", attrs: (class: "rail"))[
     #html.elem("div", attrs: (class: "brand"))[
-      #html.elem("div", attrs: (class: "course"), term.course)
-      #html.elem("div", attrs: (class: "term"), term.name)
+      #html.elem("a", attrs: (class: "home", href: _rebase(base, "index.html")))[
+        #html.elem("div", attrs: (class: "course"), term.course)
+        #html.elem("div", attrs: (class: "term"), term.name)
+      ]
       #html.elem("div", attrs: (class: "coursetitle"), term.title)
     ]
     // A short note under the course title — "under construction", a room

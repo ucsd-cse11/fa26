@@ -6,9 +6,9 @@
 // ===========================================================================
 
 #let intro = [
-  This page is under construction until the first class on Sep 24.
-  Welcome to CSE11!
-  
+  Welcome to CSE11! This quarter we will explore programming in Java in an
+  object-oriented style, with a focus on representing, specifying, testing, and
+  breaking down open-ended computational problems.
 ]
 #let term = (
   course: "CSE 11",
@@ -27,16 +27,17 @@
 #let doodle = none   // path to an image, or none
 
 #let quick-links = (
+  (label: [🏠 Course Home], href: "index.html"),
   (label: [✅ Syllabus], href: "syllabus.html"),
   (label: [🙋 Piazza], href: "https://piazza.com/class/mu7d4ro26uc7dl"),
-  (label: [🗓️ Office hours], href: "#staff"),
+  (label: [🗓️ Office hours (coming soon)], href: "#staff"),
   (label: [📥 Gradescope], href: "https://www.gradescope.com/courses/1404864"),
   (label: [🖥️ PrairieLearn], href: "https://us.prairielearn.com"),
 )
 
 #let staff = (
   (name: "Ben Ochoa", role: [Instructor], href: "https://cseweb.ucsd.edu/~bochoa/", hours: [Coming soon]),
-  (name: "Joe Politz", role: [Instructor], href: "https://jpolitz.github.io", hours: [Office: Wed 9:00am CSE3206]),
+  (name: "Joe Politz", role: [Instructor], href: "https://jpolitz.github.io", hours: [Office hours: Wed 9-10:00am, CSE3206]),
   (name: "Staff", role: [TAs and Tutors], href: none, hours: [Coming soon]),
 )
 

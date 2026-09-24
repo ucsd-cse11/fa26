@@ -53,6 +53,7 @@ code { font: 0.86em/1 var(--mono); background: var(--rule-faint); padding: .1em 
 
 /* -------------------------------------------------------------- left rail */
 .brand { margin-bottom: .9rem; }
+.brand .home { display: block; color: var(--fg); }
 .brand .course { font-size: 1.5rem; font-weight: 700; letter-spacing: -.015em; line-height: 1.1; }
 .brand .term { color: var(--muted); font-size: .82rem; font-weight: 600;
                text-transform: uppercase; letter-spacing: .07em; margin-top: .1rem; }
