@@ -29,14 +29,14 @@
   Each week there are 8 points of social learning credit available:
 
   - 2 for each lecture (total 4)
-  - 1 for attending discussion
+  - 2 for attending discussion
   - 2 for completing readings
-  - 1 for significant interaction on Piazza or attending office hours
 
   == Assignments
 
   We plan 6 assignments (due Fridays in weeks 1, 2, 4, 6, 8, and 10) that will
-  have a mix of programming and writing about programs.
+  have a mix of programming and writing about programs. That's a plan –
+  deadlines may shift a little, and we will clearly post if they do.
 
   Most assignments will have an *initial deadline* and a *review/resubmission
   deadline*. The review/resubmission deadline will be around 2 weeks after the
@@ -59,6 +59,9 @@
   For a score of *0* or *1* on the initial submission, the maximum score on a
   resubmission is *3*. For a score of *2* or *3* on the initial submission, the
   resubmission score can reach *4*.
+
+  Some resubmissions may *require* an in-person meeting with a staff member to
+  check understanding.
 
   == Exams
 

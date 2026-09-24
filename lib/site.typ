@@ -49,6 +49,7 @@
 #let entry(s, lozenge-last: false) = {
   let name = _kind-label.at(s.kind, default: "Item")
   let tag = if "n" in s { name + " " + str(s.n) } else { name }
+  let tag = if s.at("time", default: none) != none { tag + " " + s.time } else { tag }
   let lz = lozenge(s.kind, tag)
   let who = if s.at("who", default: none) != none { lozenge("who", s.who) }
   let body = [
