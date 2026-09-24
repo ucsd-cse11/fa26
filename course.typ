@@ -40,7 +40,7 @@
 )
 
 #let staff = (
-  (name: "Ben Ochoa", role: [Instructor], href: "https://cseweb.ucsd.edu/~bochoa/", hours: [Coming soon]),
+  (name: "Ben Ochoa", role: [Instructor], href: "https://cseweb.ucsd.edu/~bochoa/", hours: [Office Hours: Wed 8:00 PM-9:00 PM (primary) and Mon 8:00 PM-9:00 PM (secondary), CSE 3234]),
   (name: "Joe Politz", role: [Instructor], href: "https://jpolitz.github.io", hours: [Office hours: Wed 9-10:00am, CSE3206]),
   (name: "Staff", role: [TAs and Tutors], href: none, hours: [Coming soon]),
 )
