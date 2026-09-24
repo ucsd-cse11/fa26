@@ -1,6 +1,7 @@
 #import "course.typ": term, doodle, quick-links, staff, sessions, intro
 #import "assignments/pa0.typ": pa0
 #import "assignments/pa1.typ": pa1
+#import "syllabus.typ": syllabus
 
 #import "lib/site.typ": shell, rail, calendar
 
@@ -10,6 +11,15 @@
   #shell(
     rail(term, doodle, quick-links, staff, intro: intro),
     html.elem("main", attrs: (class: "cal-col"), calendar(term, sessions)),
+  )
+]
+
+#document("syllabus.html",
+  title: [Syllabus],
+  description: [#term.course, #term.name: Syllabus])[
+  #shell(
+    rail(term, doodle, quick-links, staff),
+    html.elem("main", syllabus)
   )
 ]
 
@@ -26,15 +36,6 @@
   )
 ]
 
-#document("assignments/pa1.html",
-  title: [PA 1],
-  description: [#term.course, #term.name: PA 1])[
-  #shell(
-    rail(term, doodle, quick-links, staff, base: "../"),
-    html.elem("main", pa1),
-    base: "../",
-  )
-]
 
 #asset("assets/site.css", read("assets/site.css", encoding: none))
 #asset("typst.txt", read("typst.txt", encoding: none))

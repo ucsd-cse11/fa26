@@ -28,8 +28,8 @@
 
   Each week there are 8 points of social learning credit available:
 
-  - 2 for each lecture (total 4)
-  - 2 for attending discussion
+  - 2 for each lecture (total 4 points per week)
+  - 2 for attending discussion (only once)
   - 2 for completing readings
 
   == Assignments

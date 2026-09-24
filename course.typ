@@ -27,6 +27,7 @@
 #let doodle = none   // path to an image, or none
 
 #let quick-links = (
+  (label: [✅ Syllabus], href: "syllabus.html"),
   (label: [🙋 Piazza], href: "https://piazza.com/class/mu7d4ro26uc7dl"),
   (label: [🗓️ Office hours], href: "#staff"),
   (label: [📥 Gradescope], href: "https://www.gradescope.com/courses/1404864"),
@@ -35,7 +36,7 @@
 
 #let staff = (
   (name: "Ben Ochoa", role: [Instructor], href: "https://cseweb.ucsd.edu/~bochoa/", hours: [Coming soon]),
-  (name: "Joe Politz", role: [Instructor], href: "https://jpolitz.github.io", hours: [Coming soon]),
+  (name: "Joe Politz", role: [Instructor], href: "https://jpolitz.github.io", hours: [Office: Wed 9:00am CSE3206]),
   (name: "Staff", role: [TAs and Tutors], href: none, hours: [Coming soon]),
 )
 
