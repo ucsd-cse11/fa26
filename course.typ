@@ -86,9 +86,9 @@
    extras: ((label: [worksheet], href: "https://ucsd-cse11.github.io/book/fa26/worksheets/definitions-and-values.pdf"),)),
   (date: d(9, 29), kind: "lecture", n: 2, who: "Joe", title: [Records and methods], href: none),
   (date: d(9, 30), kind: "lecture", n: 2, who: "Ben", title: [Records and methods], href: none),
-  (date: d(10, 1),  kind: "due", href: "https://us.prairielearn.com/pl/course_instance/232999/assessment_instance/15006245", title: [Ch01], time: "9:30am"),
-  (date: d(10, 1),  kind: "due", href: "https://us.prairielearn.com/pl/course_instance/232999/assessment_instance/15006264", title: [Ch02], time: "9:30am"),
-  (date: d(10, 1),  kind: "due", href: "https://us.prairielearn.com/pl/course_instance/232999/assessment_instance/15006350", title: [Ch03], time: "9:30am"),
+  (date: d(10, 1),  kind: "due", href: "https://us.prairielearn.com/pl/course_instance/232999/assessments", title: [Ch01], time: "9:30am"),
+  (date: d(10, 1),  kind: "due", href: "https://us.prairielearn.com/pl/course_instance/232999/assessments", title: [Ch02], time: "9:30am"),
+  (date: d(10, 1),  kind: "due", href: "https://us.prairielearn.com/pl/course_instance/232999/assessments", title: [Ch03], time: "9:30am"),
   (date: d(10, 1), kind: "lecture", n: 3, who: "Joe", title: [`main` and `java`], href: none),
   (date: d(10, 2), kind: "due", time: "10pm", title: [PA0], href: "assignments/pa0.html"),
 
