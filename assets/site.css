@@ -73,6 +73,7 @@ ul.links li { padding: .13rem 0; font-size: .9rem; }
 ul.staff li { padding: .28rem 0; font-size: .9rem; line-height: 1.3; }
 .sub { color: var(--muted); font-size: .78rem; }
 .hours { display: block; color: var(--muted); font-size: .78rem; }
+a.email { display: block; font-size: .78rem; }
 
 /* --------------------------------------------------------------- calendar */
 .week { margin-bottom: 1.5rem; }
@@ -131,3 +132,7 @@ ul.staff li { padding: .28rem 0; font-size: .9rem; line-height: 1.3; }
   .rows { grid-template-columns: 5.6rem minmax(0, 1fr); }
   .due { grid-column: 2; text-align: left; }
 }
+
+/* ---------------------------------------------------------- office-hours page */
+.gcal-embed { width: 100%; overflow: hidden; }
+.gcal-embed iframe { width: 100%; min-height: 600px; display: block; }

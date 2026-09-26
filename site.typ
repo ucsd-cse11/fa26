@@ -37,5 +37,27 @@
 ]
 
 
+#document("calendar.html",
+  title: [Course Calendar],
+  description: [#term.course, #term.name: Course Calendar])[
+  #shell(
+    rail(term, doodle, quick-links, staff),
+    html.elem("main", attrs: (class: "cal-col"))[
+      #html.elem("h1", [Course Calendar])
+      #html.elem("p", [This page contains the schedule of lectures, help hours, and discussions.])
+      #html.elem("div", attrs: (class: "gcal-embed"))[
+        #html.elem("iframe", attrs: (
+          src: "https://calendar.google.com/calendar/embed?src=c_eeb415d89b4f07b48852ef4a94e9995b79bfdd44e7a2b3013905c5d1a489dcd1%40group.calendar.google.com&ctz=America%2FLos_Angeles",
+          style: "border: 0",
+          width: "100%",
+          height: "600",
+          frameborder: "0",
+          scrolling: "no",
+        ), [])
+      ]
+    ]
+  )
+]
+
 #asset("assets/site.css", read("assets/site.css", encoding: none))
 #asset("typst.txt", read("typst.txt", encoding: none))
