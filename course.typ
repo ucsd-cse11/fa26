@@ -34,7 +34,7 @@
   (label: [🏠 Course Home], href: "index.html"),
   (label: [✅ Syllabus], href: "syllabus.html"),
   (label: [🙋 Piazza], href: "https://piazza.com/class/mu7d4ro26uc7dl"),
-  (label: [🗓️ Office hours (coming soon)], href: "#staff"),
+  (label: [🗓️ Course Calendar], href: "calendar.html"),
   (label: [📥 Gradescope], href: "https://www.gradescope.com/courses/1404864"),
   (label: [🖥️ PrairieLearn], href: "https://us.prairielearn.com"),
 )
@@ -42,7 +42,20 @@
 #let staff = (
   (name: "Ben Ochoa", role: [Instructor], href: "https://cseweb.ucsd.edu/~bochoa/", hours: [Office Hours: Wed 8:00 PM-9:00 PM (primary) and Mon 8:00 PM-9:00 PM (secondary), CSE 3234]),
   (name: "Joe Politz", role: [Instructor], href: "https://jpolitz.github.io", hours: [Office hours: Wed 9-10:00am, CSE3206]),
-  (name: "Staff", role: [TAs and Tutors], href: none, hours: [Coming soon]),
+  (name: "Anya Bouzida", role: [TA], href: none, email: "abouzida@ucsd.edu", hours: [Office hours: Tue 11:30am–12:30pm]),
+  (name: "Daniela Perry", role: [TA], href: none, email: "dsperry@ucsd.edu", hours: [Office hours: Wed 11am–12pm]),
+  (name: "Gonzalo Allen-Perez", role: [TA], href: none, email: "gallenperez@ucsd.edu", hours: [Office hours: Thu 1–2pm]),
+  (name: "Neel Shitolay", role: [TA], href: none, email: "nshitolay@ucsd.edu", hours: [Office hours: Wed 1–2pm]),
+  (name: "Rachel Lim", role: [TA], href: none, email: "ral077@ucsd.edu", hours: []),
+  (name: "Sydney Zhang", role: [TA], href: none, email: "syz001@ucsd.edu", hours: [Office hours: Mon 3–4pm]),
+  (name: "Amanda Tsai", role: [Tutor], href: none, email: "a7tsai@ucsd.edu", hours: [Office hours: Fri 2–3pm]),
+  (name: "Blake Newhouse", role: [Tutor], href: none, email: "blnewhouse@ucsd.edu", hours: [Office hours: Mon 11am–12pm]),
+  (name: "Brendan Barber", role: [Tutor], href: none, email: "btbarber@ucsd.edu", hours: [Office hours: Wed 9–10am]),
+  (name: "Gavin Wu", role: [Tutor], href: none, email: "gawu@ucsd.edu", hours: [Office hours: Fri 10–11am]),
+  (name: "Kathy Charry", role: [Tutor], href: none, email: "kacharry@ucsd.edu", hours: [Office hours: Thu 11am–12pm]),
+  (name: "Marta Krylova", role: [Tutor], href: none, email: "mkrylova@ucsd.edu", hours: [Office hours: Mon 4–5pm]),
+  (name: "Tianlin Situ", role: [Tutor], href: none, email: "tsitu@ucsd.edu", hours: [Office hours: Tue 4–5pm]),
+  (name: "Zach Swanson", role: [Tutor], href: none, email: "zswanson@ucsd.edu", hours: [Office hours: Fri 11am–12pm]),
 )
 
 // --------------------------------------------------------------- the calendar

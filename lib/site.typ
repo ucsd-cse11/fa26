@@ -146,6 +146,9 @@
           #html.elem("li")[
             #if p.href != none [#link(_rebase(base, p.href), p.name)] else [#p.name]
             #html.elem("span", attrs: (class: "sub"), p.role)
+            #if p.at("email", default: none) != none {
+              html.elem("a", attrs: (class: "email", href: "mailto:" + p.email), p.email)
+            }
             #html.elem("span", attrs: (class: "hours"), p.hours)
           ]
         ]
