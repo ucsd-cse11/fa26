@@ -52,7 +52,7 @@
   (name: "Blake Newhouse", role: [Tutor], href: none, email: "blnewhouse@ucsd.edu", hours: [Office hours: Mon 11am–12pm]),
   (name: "Brendan Barber", role: [Tutor], href: none, email: "btbarber@ucsd.edu", hours: [Office hours: Wed 9–10am]),
   (name: "Gavin Wu", role: [Tutor], href: none, email: "gawu@ucsd.edu", hours: [Office hours: Fri 10–11am]),
-  (name: "Kathy Charry", role: [Tutor], href: none, email: "kacharry@ucsd.edu", hours: [Office hours: Thu 11am–12pm]),
+  (name: "Kathy Charry", role: [Tutor], href: none, email: "kacharry@ucsd.edu", hours: [Office hours: Thu 11:30am–12:30pm]),
   (name: "Marta Krylova", role: [Tutor], href: none, email: "mkrylova@ucsd.edu", hours: [Office hours: Mon 4–5pm]),
   (name: "Tianlin Situ", role: [Tutor], href: none, email: "tsitu@ucsd.edu", hours: [Office hours: Tue 4–5pm]),
   (name: "Zach Swanson", role: [Tutor], href: none, email: "zswanson@ucsd.edu", hours: [Office hours: Fri 11am–12pm]),
