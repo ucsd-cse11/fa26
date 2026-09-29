@@ -132,7 +132,7 @@
       #html.elem("ul", attrs: (class: "links"))[
         #for l in quick-links [
           #html.elem("li")[
-            #link(_rebase(base, l.href), l.label)
+            #if l.href.starts-with(regex("https?://")) [#link-out(l.href, l.label)] else [#link(_rebase(base, l.href), l.label)]
             #if l.at("note", default: none) != none {
               html.elem("span", attrs: (class: "sub"), l.note)
             }
