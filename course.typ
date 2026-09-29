@@ -117,7 +117,7 @@
    )),
   (date: d(10, 1),  kind: "due", href: "https://us.prairielearn.com/pl/course_instance/232999/assessments", title: [Ch01,02,03], time: "9:30am"),
   (date: d(10, 1), kind: "lecture", n: 3, who: "Joe", title: [`main` and `java`], href: none),
-  (date: d(10, 2), kind: "due", time: "11:59pm", title: [PA0], href: "https://us.prairielearn.com/pl/course_instance/232999/assessment/2734979"),
+  (date: d(10, 2), kind: "due", time: "11:59pm", title: [PA0], href: ""),
 
   (date: d(10, 5), kind: "lecture", n: 3, who: "Ben", title: [`main` and `java`], href: none),
   (date: d(10, 9), kind: "due", title: [PA1], href: "assignments/pa1.html"),
