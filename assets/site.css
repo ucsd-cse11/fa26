@@ -75,20 +75,17 @@ ul.staff li { padding: .28rem 0; font-size: .9rem; line-height: 1.3; }
 .hours { display: block; color: var(--muted); font-size: .78rem; }
 a.email { display: block; font-size: .78rem; }
 
-/* Collapsible staff entries. Native <details>: name+role is the summary,
-   email/hours reveal on tap. Keeps the rail short on mobile. */
-.staff summary { list-style: none; cursor: pointer; outline: none; }
-.staff summary::-webkit-details-marker { display: none; }
-.staff summary::before {
-  content: "\25B8";                /* ▸ */
-  display: inline-block;
-  width: .8rem;
-  color: var(--muted);
-  font-size: .7rem;
+/* Collapsible Staff section. The <summary> is styled to match .rail-sec h3
+   so it reads as the section header; clicking it toggles the whole list. */
+.rail-collapse > summary {
+  list-style: none; cursor: pointer; outline: none;
+  font-size: .68rem; font-weight: 700; text-transform: uppercase; letter-spacing: .1em;
+  color: var(--muted); margin: 0 0 .3rem; padding-bottom: .22rem;
+  border-bottom: 1px solid var(--rule);
 }
-.staff details[open] > summary::before { content: "\25BE"; }  /* ▾ */
-.staff details > .email,
-.staff details > .hours { margin-left: .8rem; }
+.rail-collapse > summary::-webkit-details-marker { display: none; }
+.rail-collapse > summary::after { content: "\25B8"; float: right; font-size: .8rem; }
+.rail-collapse[open] > summary::after { content: "\25BE"; }
 
 /* --------------------------------------------------------------- calendar */
 .week { margin-bottom: 1.5rem; }

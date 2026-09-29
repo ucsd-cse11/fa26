@@ -140,15 +140,17 @@
         ]
       ]
     ]
-    #_rail-section("Staff")[
-      #html.elem("ul", attrs: (class: "staff", id: "staff"))[
-        #for p in staff [
-          #html.elem("li")[
-            #html.elem("details")[
-              #html.elem("summary")[
-                #if p.href != none [#link(_rebase(base, p.href), p.name)] else [#p.name]
-                #html.elem("span", attrs: (class: "sub"), p.role)
-              ]
+    // The whole staff list collapses under one toggle. `_rail-section`'s h3
+    // would sit outside the <details>, so this section is inlined and the
+    // <summary> plays the h3's role.
+    #html.elem("section", attrs: (class: "rail-sec"))[
+      #html.elem("details", attrs: (class: "rail-collapse"))[
+        #html.elem("summary", "Staff")
+        #html.elem("ul", attrs: (class: "staff", id: "staff"))[
+          #for p in staff [
+            #html.elem("li")[
+              #if p.href != none [#link(_rebase(base, p.href), p.name)] else [#p.name]
+              #html.elem("span", attrs: (class: "sub"), p.role)
               #if p.at("email", default: none) != none {
                 html.elem("a", attrs: (class: "email", href: "mailto:" + p.email), p.email)
               }
