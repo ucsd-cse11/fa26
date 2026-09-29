@@ -174,3 +174,36 @@ a.email { display: block; font-size: .78rem; }
 .info-body p { margin: 0 0 .75rem; }
 .info-body ul { margin: 0 0 .75rem; padding-left: 1.25rem; }
 .info-body img { max-width: 100%; height: auto; display: block; margin: .5rem 0 0; border: 1px solid var(--rule-faint); border-radius: 4px; }
+
+/* ---------------------------------------------------------- assignments table */
+.assign-table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  margin-top: 1rem;
+}
+.assign-table th,
+.assign-table td {
+  border: 1px solid var(--rule);
+  padding: .65rem 1rem;
+  text-align: left;
+  vertical-align: middle;
+  word-break: break-word;
+}
+.assign-table th {
+  background: var(--accent-bg);
+  font-size: .78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .07em;
+  color: var(--muted);
+}
+.assign-table td {
+  font-size: .9rem;
+}
+.assign-table tbody tr:hover td {
+  background: var(--rule-faint);
+}
+@media (max-width: 40rem) {
+  .assign-table { table-layout: auto; }
+}

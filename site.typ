@@ -2,6 +2,7 @@
 #import "assignments/pa0.typ": pa0
 #import "assignments/pa1.typ": pa1
 #import "syllabus.typ": syllabus
+#import "assignments-page.typ": assignments-page
 
 #import "lib/site.typ": shell, rail, calendar
 
@@ -20,6 +21,15 @@
   #shell(
     rail(term, doodle, quick-links, staff),
     html.elem("main", syllabus)
+  )
+]
+
+#document("assignments.html",
+  title: [Assignments],
+  description: [#term.course, #term.name: Assignments])[
+  #shell(
+    rail(term, doodle, quick-links, staff),
+    html.elem("main", assignments-page)
   )
 ]
 

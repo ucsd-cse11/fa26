@@ -33,6 +33,7 @@
 #let quick-links = (
   (label: [🏠 Course Home], href: "index.html"),
   (label: [✅ Syllabus], href: "syllabus.html"),
+  (label: [📋 Assignments], href: "assignments.html"),
   (label: [🙋 Piazza], href: "https://piazza.com/class/mu7d4ro26uc7dl"),
   (label: [🗓️ Course Calendar], href: "calendar.html"),
   (label: [📥 Gradescope], href: "https://www.gradescope.com/courses/1404864"),
