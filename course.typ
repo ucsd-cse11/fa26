@@ -36,7 +36,7 @@
   (label: [🙋 Piazza], href: "https://piazza.com/class/mu7d4ro26uc7dl"),
   (label: [🗓️ Course Calendar], href: "calendar.html"),
   (label: [📥 Gradescope], href: "https://www.gradescope.com/courses/1404864"),
-  (label: [🖥️ PrairieLearn], href: "https://us.prairielearn.com"),
+  (label: [🖥️ PrairieLearn], href: "https://us.prairielearn.com/pl/course_instance/232999"),
 )
 
 #let staff = (
