@@ -113,6 +113,7 @@
    extras: (
      (label: [composition worksheet], href: "https://ucsd-cse11.github.io/book/fa26/worksheets/composition-styles.pdf"),
      (label: [names worksheet], href: "https://ucsd-cse11.github.io/book/fa26/worksheets/student-names.pdf"),
+     (label: [slides], href: "https://cseweb.ucsd.edu/classes/fa26/cse11-002/lec2.pdf"),
    )),
   (date: d(10, 1),  kind: "due", href: "https://us.prairielearn.com/pl/course_instance/232999/assessments", title: [Ch01,02,03], time: "9:30am"),
   (date: d(10, 1), kind: "lecture", n: 3, who: "Joe", title: [`main` and `java`], href: none),
