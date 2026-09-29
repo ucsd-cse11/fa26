@@ -69,6 +69,7 @@
             We also use Autograder (#html.elem("a", attrs: (href: "https://autograder.ucsd.edu", target: "_blank", rel: "noopener noreferrer"), [autograder.ucsd.edu])) to manage help hour sessions. You do NOT need to use Autograder in order to get tutoring help, but it may be helpful if you do not want to be in the home base room or if there is a significantly large number of students seeking help at the same time. Annoyingly, Autograder is badly named and is not related to grading at all. Instead, you can think of it as a tutoring queue: when you arrive at the CSE basement, you can login to autograder for CSE 11 and create a ticket like below, and a tutor will come see you when it's your turn:
           ])
           #html.elem("img", attrs: (src: "assets/autograder-ticket.png", alt: "Autograder's Create Ticket form"), [])
+          #html.elem("p", [Please note that we will not be accepting virtual (over zoom) tickets on autograder.])
         ]
       ]
       #html.elem("div", attrs: (class: "gcal-embed"))[
