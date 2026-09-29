@@ -41,7 +41,7 @@
 
 #let staff = (
   (name: "Ben Ochoa", role: [Instructor], href: "https://cseweb.ucsd.edu/~bochoa/", hours: [Office Hours: Wed 8:00 PM-9:00 PM (primary) and Mon 8:00 PM-9:00 PM (secondary), CSE 3234]),
-  (name: "Joe Politz", role: [Instructor], href: "https://jpolitz.github.io", hours: [Office hours: Wed 9-10:00am, CSE3206]),
+  (name: "Joe Politz", role: [Instructor], href: "https://jpolitz.github.io", hours: [Office Hours: Tue 11am-12pm, Galbraith Hall 253 and Wed 9-10:00am, CSE3206]),
   (name: "Anya Bouzida", role: [TA], href: none, email: "abouzida@ucsd.edu", hours: []),
   (name: "Daniela Perry", role: [TA], href: none, email: "dsperry@ucsd.edu", hours: []),
   (name: "Gonzalo Allen-Perez", role: [TA], href: none, email: "gallenperez@ucsd.edu", hours: []),
