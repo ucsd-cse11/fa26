@@ -1,3 +1,4 @@
 site/
 *.png
+!assets/*.png
 .deps.json

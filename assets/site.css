@@ -148,3 +148,29 @@ a.email { display: block; font-size: .78rem; }
 /* ---------------------------------------------------------- office-hours page */
 .gcal-embed { width: 100%; overflow: hidden; }
 .gcal-embed iframe { width: 100%; min-height: 600px; display: block; }
+
+/* Collapsible info panel used in the main column (e.g. help-hours writeup
+   on the calendar page). Larger than the rail's .rail-collapse. */
+.info-collapse {
+  border: 1px solid var(--rule);
+  border-radius: 6px;
+  margin: 0 0 1.5rem;
+  background: var(--bg);
+}
+.info-collapse > summary {
+  list-style: none; cursor: pointer; outline: none;
+  padding: .65rem .9rem;
+  font-size: 1rem; font-weight: 600;
+}
+.info-collapse > summary::-webkit-details-marker { display: none; }
+.info-collapse > summary::after {
+  content: "\25B8"; float: right; color: var(--muted); font-size: .9rem;
+}
+.info-collapse[open] > summary { border-bottom: 1px solid var(--rule); }
+.info-collapse[open] > summary::after { content: "\25BE"; }
+.info-body { padding: .9rem; }
+.info-body > *:first-child { margin-top: 0; }
+.info-body > *:last-child { margin-bottom: 0; }
+.info-body p { margin: 0 0 .75rem; }
+.info-body ul { margin: 0 0 .75rem; padding-left: 1.25rem; }
+.info-body img { max-width: 100%; height: auto; display: block; margin: .5rem 0 0; border: 1px solid var(--rule-faint); border-radius: 4px; }

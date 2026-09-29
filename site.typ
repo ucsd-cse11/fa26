@@ -45,6 +45,22 @@
     html.elem("main", attrs: (class: "cal-col"))[
       #html.elem("h1", [Course Calendar])
       #html.elem("p", [This page contains the schedule of lectures, help hours, and discussions.])
+      #html.elem("details", attrs: (class: "info-collapse"))[
+        #html.elem("summary", [How do Help Hours Work for CSE 11?])
+        #html.elem("div", attrs: (class: "info-body"))[
+          #html.elem("p", [We highly encourage students to come by CSE 11 help hours for guidance on anything regarding the course! Here is how help hours work:])
+          #html.elem("p", [First of all, feel free to come to any of the staff help hours that work for you, regardless of if the course staff member is a tutor, TA, or professor. If the staff member has a specific room set on the course calendar, they will be in there, but if not they will be in the CSE 11 Home Base Rooms™.])
+          #html.elem("ul")[
+            #html.elem("li", [On every day except Thursdays, the Home Base Room is CSE B270.])
+            #html.elem("li", [On Thursdays, the Home Base Room is CSE B240.])
+          ]
+          #html.elem("p", [Remember that these are the big rooms, so you can just come on in, let the staff member know you are there, and get situated!])
+          #html.elem("p", [
+            We also use Autograder (#html.elem("a", attrs: (href: "https://autograder.ucsd.edu", target: "_blank", rel: "noopener noreferrer"), [autograder.ucsd.edu])) to manage help hour sessions. You do NOT need to use Autograder in order to get tutoring help, but it may be helpful if you do not want to be in the home base room or if there is a significantly large number of students seeking help at the same time. Annoyingly, Autograder is badly named and is not related to grading at all. Instead, you can think of it as a tutoring queue: when you arrive at the CSE basement, you can login to autograder for CSE 11 and create a ticket like below, and a tutor will come see you when it's your turn:
+          ])
+          #html.elem("img", attrs: (src: "assets/autograder-ticket.png", alt: "Autograder's Create Ticket form"), [])
+        ]
+      ]
       #html.elem("div", attrs: (class: "gcal-embed"))[
         #html.elem("iframe", attrs: (
           src: "https://calendar.google.com/calendar/embed?src=c_eeb415d89b4f07b48852ef4a94e9995b79bfdd44e7a2b3013905c5d1a489dcd1%40group.calendar.google.com&ctz=America%2FLos_Angeles",
@@ -60,4 +76,5 @@
 ]
 
 #asset("assets/site.css", read("assets/site.css", encoding: none))
+#asset("assets/autograder-ticket.png", read("assets/autograder-ticket.png", encoding: none))
 #asset("typst.txt", read("typst.txt", encoding: none))
