@@ -29,6 +29,15 @@
   - 2 for attending discussion (only once)
   - 2 for completing readings
 
+  For *lecture* points, one point will come from an on-paper, in-person set of
+  answers on a handout done in class, and the other will come from completing a
+  more detailed worksheet and submitting it electronically before the next
+  lecture session.
+
+  Both are graded on completeness and reasonableness, not on strict correctness.
+  If you miss a lecture, you cannot earn the credit for the in-person, on-paper
+  component, but you can still submit the worksheet electronically for 1 point.
+
   == Assignments
 
   We plan 6 assignments (due Fridays in weeks 1, 2, 4, 6, 8, and 10) that will
