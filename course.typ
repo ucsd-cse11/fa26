@@ -119,6 +119,7 @@
   (date: d(10, 1), kind: "lecture", n: 3, who: "Joe", title: [Designing Data], href: none,
     extras: (
       (label: [names worksheet], href: "https://ucsd-cse11.github.io/book/fa26/worksheets/student-names.pdf"),
+      (label: [notes], href: "https://drive.google.com/file/d/16eZ86aJ0-a0uxS4EdFqFsjdHP04h7aCG/view?usp=sharing"),
     )
   ),
   (date: d(10, 2), kind: "due", time: "11:59pm", title: [PA0], href: "assignments/pa0.html"),
