@@ -108,19 +108,25 @@
   (date: d(9, 29), kind: "lecture", n: 2, who: "Joe", title: [Records and methods], href: none,
    extras: (
      (label: [composition worksheet], href: "https://ucsd-cse11.github.io/book/fa26/worksheets/composition-styles.pdf"),
-     (label: [names worksheet], href: "https://ucsd-cse11.github.io/book/fa26/worksheets/student-names.pdf"),
    )),
   (date: d(9, 30), kind: "lecture", n: 2, who: "Ben", title: [Records and methods], href: none,
    extras: (
      (label: [composition worksheet], href: "https://ucsd-cse11.github.io/book/fa26/worksheets/composition-styles.pdf"),
-     (label: [names worksheet], href: "https://ucsd-cse11.github.io/book/fa26/worksheets/student-names.pdf"),
      (label: [slides], href: "https://cseweb.ucsd.edu/classes/fa26/cse11-002/lec2.pdf"),
    )),
   (date: d(10, 1),  kind: "due", href: "https://us.prairielearn.com/pl/course_instance/232999/assessments", title: [Ch01,02,03], time: "9:30am"),
-  (date: d(10, 1), kind: "lecture", n: 3, who: "Joe", title: [`main` and `java`], href: none),
+  (date: d(10, 1), kind: "lecture", n: 3, who: "Joe", title: [Designing Data], href: none,
+    extras: (
+      (label: [names worksheet], href: "https://ucsd-cse11.github.io/book/fa26/worksheets/student-names.pdf"),
+    )
+  ),
   (date: d(10, 2), kind: "due", time: "11:59pm", title: [PA0], href: "assignments/pa0.html"),
 
-  (date: d(10, 5), kind: "lecture", n: 3, who: "Ben", title: [`main` and `java`], href: none),
+  (date: d(10, 5), kind: "lecture", n: 3, who: "Ben", title: [Designing Data], href: none,
+    extras: (
+      (label: [names worksheet], href: "https://ucsd-cse11.github.io/book/fa26/worksheets/student-names.pdf"),
+    ),
+  ),
   (date: d(10, 9), kind: "due", title: [PA1], href: "assignments/pa1.html"),
   
   
