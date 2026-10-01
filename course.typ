@@ -108,6 +108,7 @@
   (date: d(9, 29), kind: "lecture", n: 2, who: "Joe", title: [Records and methods], href: none,
    extras: (
      (label: [composition worksheet], href: "https://ucsd-cse11.github.io/book/fa26/worksheets/composition-styles.pdf"),
+     (label: [notes], href: "https://drive.google.com/file/d/1ZOz16PhBrfCj6O0hWGoPeYShPn69Um5K/view?usp=sharing"),
    )),
   (date: d(9, 30), kind: "lecture", n: 2, who: "Ben", title: [Records and methods], href: none,
    extras: (
