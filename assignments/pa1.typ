@@ -27,4 +27,6 @@
 
   This might help some of you calibrate a little bit if CSE8A is a better fit for you this quarter – there is still plenty of time to enroll in, and succeed in, CSE8A.
 
+  Also, please note that the autograder only confirms that your submission is gradeable. Given the open-ended nature of the assignment, and the addition of written response questions, these results will not constitute your final grade.
+
 ]
