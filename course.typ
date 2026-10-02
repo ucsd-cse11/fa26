@@ -115,7 +115,7 @@
      (label: [composition worksheet], href: "https://ucsd-cse11.github.io/book/fa26/worksheets/composition-styles.pdf"),
      (label: [slides], href: "https://cseweb.ucsd.edu/classes/fa26/cse11-002/lec2.pdf"),
    )),
-  (date: d(10, 1),  kind: "due", href: "https://us.prairielearn.com/pl/course_instance/232999/assessments", title: [Ch01,02,03], time: "9:30am"),
+  (date: d(10, 1),  kind: "due", href: "https://ucsd-cse11.github.io/book/fa26/programs-and-values/programs-and-values.html", title: [Ch01,02,03], time: "9:30am"),
   (date: d(10, 1), kind: "lecture", n: 3, who: "Joe", title: [Designing Data], href: none,
     extras: (
       (label: [names worksheet], href: "https://ucsd-cse11.github.io/book/fa26/worksheets/student-names.pdf"),
@@ -124,14 +124,27 @@
   ),
   (date: d(10, 2), kind: "due", time: "11:59pm", title: [PA0], href: "assignments/pa0.html"),
 
+  // Week 2
   (date: d(10, 5), kind: "lecture", n: 3, who: "Ben", title: [Designing Data], href: none,
     extras: (
       (label: [names worksheet], href: "https://ucsd-cse11.github.io/book/fa26/worksheets/student-names.pdf"),
     ),
   ),
   (date: d(10, 6),  kind: "due", href: "https://us.prairielearn.com/pl/course_instance/232999/assessments", title: [Ch04], time: "9:30am"),
+  (date: d(10, 6),  kind: "lecture", n: 4, who: "Joe", title: [`java` and main], href: none,
+    extras: (
+      (label: [main worksheet], href: "https://ucsd-cse11.github.io/book/fa26/worksheets/java-and-main.pdf"),
+    ),
+  ),
+  (date: d(10, 7),  kind: "lecture", n: 4, who: "Ben", title: [`java` and main], href:none,
+    extras: (
+      (label: [main worksheet], href: "https://ucsd-cse11.github.io/book/fa26/worksheets/java-and-main.pdf"),
+    ),
+  ),
+  (date: d(10, 8),  kind: "lecture", n: 5, who: "Joe", title: [Arrays], href:none),
+  (date: d(10, 8),  kind: "due", href: none, title: [Ch05], time: "9:30am"),
   (date: d(10, 9), kind: "due", title: [PA1], href: "assignments/pa1.html"),
-  
-  
-  
+
+  // Week 3
+  (date: d(10, 12),  kind: "lecture", n: 5, who: "Ben", title: [Arrays], href:none),
 )
