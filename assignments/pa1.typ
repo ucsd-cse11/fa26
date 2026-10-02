@@ -1,11 +1,10 @@
-typst
 #import "../lib/site.typ": link-out
 
-#let pa0 = [
+#let pa1 = [
 
-  = PA 0
+  = PA 1
 
-  Programming Assignment 0 (PA0) has now been released on PrairieLearn.
+  Programming Assignment 1 (PA1) has now been released on PrairieLearn.
 
   As a reminder, the assignment will be graded out of four points:
 
@@ -15,12 +14,17 @@ typst
   - *1*: Non-empty submission of some parts of the assignment
   - *0*: Not submitted/not attempted
 
-  The due date is *Friday, October 2 at 11:59 PM*.
-
-  All other information you will need can be viewed on PrairieLearn at the following link:
+  The due date is *[INSERT PA1 DUE DATE]*.
 
   #link-out(
-    "https://us.prairielearn.com/pl/course_instance/232999/assessment/2734979",
-    "PA0 on PrairieLearn"
+    "https://us.prairielearn.com/pl/course_instance/232999/assessment_instance/15230714",
+    "PA1 on PrairieLearn"
   )
+
+  == Important Note
+
+  Please spend some time as soon as you can to attempt parts of this assignment. It is open-ended, meaning you have a lot of freedom in how you approach it. We also believe that parts of it are challenging, and you may be asked to do tasks like these (though a bit smaller) on exams without internet access or AI assistance.
+
+  This might help some of you calibrate a little bit if CSE8A is a better fit for you this quarter – there is still plenty of time to enroll in, and succeed in, CSE8A.
+
 ]
