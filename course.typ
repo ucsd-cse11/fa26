@@ -133,12 +133,12 @@
   (date: d(10, 6),  kind: "due", href: "https://us.prairielearn.com/pl/course_instance/232999/assessments", title: [Ch04], time: "9:30am"),
   (date: d(10, 6),  kind: "lecture", n: 4, who: "Joe", title: [`java` and main], href: none,
     extras: (
-      (label: [main worksheet], href: "https://ucsd-cse11.github.io/book/fa26/worksheets/java-and-main.pdf"),
+      (label: [main worksheet], href: "https://ucsd-cse11.github.io/book/fa26/worksheets/main-and-java.pdf"),
     ),
   ),
   (date: d(10, 7),  kind: "lecture", n: 4, who: "Ben", title: [`java` and main], href:none,
     extras: (
-      (label: [main worksheet], href: "https://ucsd-cse11.github.io/book/fa26/worksheets/java-and-main.pdf"),
+      (label: [main worksheet], href: "https://ucsd-cse11.github.io/book/fa26/worksheets/main-and-java.pdf"),
     ),
   ),
   (date: d(10, 8),  kind: "lecture", n: 5, who: "Joe", title: [Arrays], href:none),
