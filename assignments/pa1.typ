@@ -14,7 +14,7 @@
   - *1*: Non-empty submission of some parts of the assignment
   - *0*: Not submitted/not attempted
 
-  The due date is *[INSERT PA1 DUE DATE]*.
+  The due date is *Friday, October 9 at 11:59 PM*.
 
   #link-out(
     "https://us.prairielearn.com/pl/course_instance/232999/assessment_instance/15230714",
