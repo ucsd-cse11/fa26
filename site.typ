@@ -33,9 +33,7 @@
   )
 ]
 
-// A page one directory down. `base` is how far back up to the site root, and
-// both shell and rail need it: shell carries the stylesheet link, rail carries
-// every href course.typ supplies as a plain string.
+// PA0 assignment page
 #document("assignments/pa0.html",
   title: [PA 0],
   description: [#term.course, #term.name: PA 0])[
@@ -46,6 +44,20 @@
   )
 ]
 
+// PA1 assignment page
+#document("assignments/pa1.html",
+  title: [PA 1],
+  description: [#term.course, #term.name: PA 1])[
+  #shell(
+    rail(term, doodle, quick-links, staff, base: "../"),
+    html.elem("main", pa1),
+    base: "../",
+  )
+]
+
+// A page one directory down. `base` is how far back up to the site root, and
+// both shell and rail need it: shell carries the stylesheet link, rail carries
+// every href course.typ supplies as a plain string.
 
 #document("calendar.html",
   title: [Course Calendar],
