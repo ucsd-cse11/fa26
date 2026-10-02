@@ -129,6 +129,7 @@
       (label: [names worksheet], href: "https://ucsd-cse11.github.io/book/fa26/worksheets/student-names.pdf"),
     ),
   ),
+  (date: d(10, 6),  kind: "due", href: "https://us.prairielearn.com/pl/course_instance/232999/assessments", title: [Ch04], time: "9:30am"),
   (date: d(10, 9), kind: "due", title: [PA1], href: "assignments/pa1.html"),
   
   
