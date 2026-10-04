@@ -128,6 +128,7 @@
   (date: d(10, 5), kind: "lecture", n: 3, who: "Ben", title: [Designing Data], href: none,
     extras: (
       (label: [names worksheet], href: "https://ucsd-cse11.github.io/book/fa26/worksheets/student-names.pdf"),
+      (label: [slides], href: "https://cseweb.ucsd.edu/classes/fa26/cse11-002/lec3.pdf"),
     ),
   ),
   (date: d(10, 6),  kind: "due", href: "https://us.prairielearn.com/pl/course_instance/232999/assessments", title: [Ch04], time: "9:30am"),
