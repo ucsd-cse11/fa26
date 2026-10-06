@@ -135,6 +135,8 @@
   (date: d(10, 6),  kind: "lecture", n: 4, who: "Joe", title: [`java` and main], href: none,
     extras: (
       (label: [main worksheet], href: "https://ucsd-cse11.github.io/book/fa26/worksheets/main-and-java.pdf"),
+      (label: [demo code], href: "https://github.com/ucsd-cse11/fa26-lecture-4-joe"),
+      (label: [notes], href: "https://drive.google.com/file/d/10XEVPMAT4mJ92YLxrsVKbDp0WFw6t4Vl/view?usp=sharing"),
     ),
   ),
   (date: d(10, 7),  kind: "lecture", n: 4, who: "Ben", title: [`java` and main], href:none,
