@@ -140,6 +140,7 @@
   (date: d(10, 7),  kind: "lecture", n: 4, who: "Ben", title: [`java` and main], href:none,
     extras: (
       (label: [main worksheet], href: "https://ucsd-cse11.github.io/book/fa26/worksheets/main-and-java.pdf"),
+      (label: [slides], href: "https://cseweb.ucsd.edu/classes/fa26/cse11-002/lec4.pdf"),
     ),
   ),
   (date: d(10, 8),  kind: "lecture", n: 5, who: "Joe", title: [Arrays], href:none),
