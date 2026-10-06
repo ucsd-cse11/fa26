@@ -144,7 +144,7 @@
     ),
   ),
   (date: d(10, 8),  kind: "lecture", n: 5, who: "Joe", title: [Arrays], href:none),
-  (date: d(10, 8),  kind: "due", href: none, title: [Ch05], time: "9:30am"),
+  (date: d(10, 8),  kind: "due", href: "https://us.prairielearn.com/pl/course_instance/232999/assessments", title: [Ch05], time: "9:30am"),
   (date: d(10, 9), kind: "due", time: "11:59pm", title: [PA1], href: "assignments/pa1.html"),
 
   // Week 3
