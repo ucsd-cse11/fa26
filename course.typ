@@ -157,5 +157,13 @@
     extras: (
       (label: [accumulators worksheet], href: "https://ucsd-cse11.github.io/book/fa26/worksheets/accumulators.pdf"),
     )),
+  (date: d(10, 13),  kind: "lecture", n: 6, who: "Joe", title: [Memory in Java], href:none,
+    extras: (
+      (label: [memory diagrams worksheet], href: "https://ucsd-cse11.github.io/book/fa26/worksheets/memory-diagrams.pdf"),
+    )),
   (date: d(10, 13),  kind: "due", href: "https://us.prairielearn.com/pl/course_instance/232999/assessments", title: [Ch06], time: "9:30am"),
+  (date: d(10, 14),  kind: "lecture", n: 6, who: "Ben", title: [Memory in Java], href:none,
+    extras: (
+      (label: [memory diagrams worksheet], href: "https://ucsd-cse11.github.io/book/fa26/worksheets/memory-diagrams.pdf"),
+    )),
 )
