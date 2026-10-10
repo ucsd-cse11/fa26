@@ -157,4 +157,5 @@
     extras: (
       (label: [accumulators worksheet], href: "https://ucsd-cse11.github.io/book/fa26/worksheets/accumulators.pdf"),
     )),
+  (date: d(10, 13),  kind: "due", href: "https://us.prairielearn.com/pl/course_instance/232999/assessments", title: [Ch06], time: "9:30am"),
 )
