@@ -156,6 +156,7 @@
   (date: d(10, 12),  kind: "lecture", n: 5, who: "Ben", title: [Arrays], href:none,
     extras: (
       (label: [accumulators worksheet], href: "https://ucsd-cse11.github.io/book/fa26/worksheets/accumulators.pdf"),
+      (label: [slides], href: "https://cseweb.ucsd.edu/classes/fa26/cse11-002/lec5.pdf"),
     )),
   (date: d(10, 13),  kind: "lecture", n: 6, who: "Joe", title: [Memory in Java], href:none,
     extras: (
