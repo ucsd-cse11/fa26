@@ -12,14 +12,16 @@
 #let lozenge(kind, body) = html.elem("strong", attrs: (class: "lz lz-" + kind), body)
 
 // Like #link, but opens in a new tab. Typst's link() has no target: param,
-// so this drops to a raw anchor. Explicit at the call site rather than a
-// show rule over every http:// destination, so "leaves the site" stays a
-// decision. Styled identically to an ordinary link for now.
+// so this drops to a raw anchor.
 #let link-out(dest, body) = {
   assert(type(dest) == str,
     message: "link-out: expects a URL string; use link() for in-site labels")
   html.elem("a", attrs: (href: dest, target: "_blank", rel: "noopener noreferrer"), body)
 }
+
+#let _external = regex("^https?://")
+#let _is-external(dest) = type(dest) == str and dest.starts-with(_external)
+#let _out-attrs(dest) = if _is-external(dest) { (target: "_blank", rel: "noopener noreferrer") } else { (:) }
 
 // Pages below the top level (pa/01.html, lectures/01.html) need in-site hrefs
 // written relative to *them*, not to the site root. `base` is the way back up
@@ -55,7 +57,7 @@
   let body = [
     #if s.at("href", default: none) != none [#link(s.href, s.title)] else [#s.title]
     #for e in s.at("extras", default: ()) [
-      #html.elem("a", attrs: (class: "xtra", href: e.href), e.label)
+      #html.elem("a", attrs: (class: "xtra", href: e.href, .._out-attrs(e.href)), e.label)
     ]
     #if s.at("reading", default: none) != none {
       html.elem("span", attrs: (class: "reading"), s.reading)
@@ -132,7 +134,7 @@
       #html.elem("ul", attrs: (class: "links"))[
         #for l in quick-links [
           #html.elem("li")[
-            #if l.href.starts-with(regex("https?://")) [#link-out(l.href, l.label)] else [#link(_rebase(base, l.href), l.label)]
+            #link(_rebase(base, l.href), l.label)
             #if l.at("note", default: none) != none {
               html.elem("span", attrs: (class: "sub"), l.note)
             }
@@ -168,6 +170,7 @@
 // --------------------------------------------------------------------- shell
 
 #let shell(left, right, base: "") = {
+  show link: it => if _is-external(it.dest) { link-out(it.dest, it.body) } else { it }
   html.elem("link", attrs: (rel: "stylesheet", href: _rebase(base, "assets/site.css")))
   html.elem("div", attrs: (class: "page"))[#left #right]
 }
