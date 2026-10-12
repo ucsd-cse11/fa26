@@ -167,4 +167,9 @@
     extras: (
       (label: [memory diagrams worksheet], href: "https://ucsd-cse11.github.io/book/fa26/worksheets/memory-diagrams.pdf"),
     )),
+  (date: d(10, 15),  kind: "lecture", n: 7, who: "Joe", title: [Nesting Objects], href:none),
+  (date: d(10, 15),  kind: "due", href: none, title: [Ch07], time: "9:30am"),
+
+  // Week 4
+  (date: d(10, 19),  kind: "lecture", n: 7, who: "Ben", title: [Nesting Objects], href:none),
 )
