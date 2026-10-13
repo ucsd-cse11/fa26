@@ -169,7 +169,7 @@
       (label: [slides], href: "https://cseweb.ucsd.edu/classes/fa26/cse11-002/lec6.pdf"),
     )),
   (date: d(10, 15),  kind: "lecture", n: 7, who: "Joe", title: [Nesting Objects], href:none),
-  (date: d(10, 15),  kind: "due", href: none, title: [Ch07], time: "9:30am"),
+  (date: d(10, 15),  kind: "due", href: "https://us.prairielearn.com/pl/course_instance/232999/assessments", title: [Ch07], time: "9:30am"),
 
   // Week 4
   (date: d(10, 19),  kind: "lecture", n: 7, who: "Ben", title: [Nesting Objects], href:none),
