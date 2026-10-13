@@ -166,6 +166,7 @@
   (date: d(10, 14),  kind: "lecture", n: 6, who: "Ben", title: [Memory in Java], href:none,
     extras: (
       (label: [memory diagrams worksheet], href: "https://ucsd-cse11.github.io/book/fa26/worksheets/memory-diagrams.pdf"),
+      (label: [slides], href: "https://cseweb.ucsd.edu/classes/fa26/cse11-002/lec6.pdf"),
     )),
   (date: d(10, 15),  kind: "lecture", n: 7, who: "Joe", title: [Nesting Objects], href:none),
   (date: d(10, 15),  kind: "due", href: none, title: [Ch07], time: "9:30am"),
