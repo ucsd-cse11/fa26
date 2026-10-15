@@ -74,7 +74,8 @@
   We will have 3 exams during the quarter, flexibly scheduled through the UCSD
   CBTF, in weeks 3, 6, and 9. In *finals week*, you will have the opportunity to
   *retry* any of the exams – the retries will have different questions that test
-  similar content.
+  similar content. The final score for each exam is the *max* of the original
+  exam and the retry exam score, so a retry can never lower your grade.
 
   Exams during the quarter are 45m long; you can reserve a *single* final exam
   retry slot for 2h, in which you attempt any or all of the retry exams.
