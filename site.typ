@@ -1,6 +1,7 @@
 #import "course.typ": term, doodle, quick-links, staff, sessions, intro
 #import "assignments/pa0.typ": pa0
 #import "assignments/pa1.typ": pa1
+#import "assignments/pa2.typ": pa2
 #import "syllabus.typ": syllabus
 #import "assignments-page.typ": assignments-page
 
@@ -51,6 +52,17 @@
   #shell(
     rail(term, doodle, quick-links, staff, base: "../"),
     html.elem("main", pa1),
+    base: "../",
+  )
+]
+
+// PA2 assignment page
+#document("assignments/pa2.html",
+  title: [PA 2],
+  description: [#term.course, #term.name: PA 2])[
+  #shell(
+    rail(term, doodle, quick-links, staff, base: "../"),
+    html.elem("main", pa2),
     base: "../",
   )
 ]

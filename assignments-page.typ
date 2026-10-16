@@ -27,6 +27,15 @@
         #html.elem("td", [October 9th, 11:59 PM])
         #html.elem("td", [])
       ]
+
+      // PA2
+      #html.elem("tr")[
+        #html.elem("td")[
+          #html.elem("a", attrs: (href: "assignments/pa2.html"), [PA 2])
+        ]
+        #html.elem("td", [October 23rd, 11:59 PM])
+        #html.elem("td", [])
+      ]
     ]
   ]
 ]

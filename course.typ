@@ -180,4 +180,5 @@
       (label: [days and pixels worksheet], href: "https://ucsd-cse11.github.io/book/fa26/worksheets/days-and-pixels.pdf"),
     )),
   (date: d(10, 20),  kind: "due", href: "https://us.prairielearn.com/pl/course_instance/232999/assessments", title: [Ch08], time: "9:30am"),
+  (date: d(10, 23), kind: "due", time: "11:59pm", title: [PA2], href: "assignments/pa2.html"),
 )
