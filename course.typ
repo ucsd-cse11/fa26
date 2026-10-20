@@ -188,6 +188,7 @@
   (date: d(10, 21),  kind: "lecture", n: 8, who: "Ben", title: [Interfaces], href:none,
     extras: (
       (label: [regions worksheet], href: "https://ucsd-cse11.github.io/book/fa26/worksheets/regions.pdf"),
+      (label: [slides], href: "https://cseweb.ucsd.edu/classes/fa26/cse11-002/lec8.pdf"),
     )),
   (date: d(10, 22),  kind: "lecture", n: 9, who: "Joe", title: [Recursive Data], href:none),
   (date: d(10, 23), kind: "due", time: "11:59pm", title: [PA2], href: "assignments/pa2.html"),
