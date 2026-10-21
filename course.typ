@@ -183,6 +183,7 @@
   (date: d(10, 20),  kind: "lecture", n: 8, who: "Joe", title: [Interfaces], href:none,
     extras: (
       (label: [regions worksheet], href: "https://ucsd-cse11.github.io/book/fa26/worksheets/regions.pdf"),
+      (label: [notes], href: "assets/lecture-8-notes.pdf"),
     )),
   (date: d(10, 20),  kind: "due", href: "https://us.prairielearn.com/pl/course_instance/232999/assessments", title: [Ch08], time: "9:30am"),
   (date: d(10, 21),  kind: "lecture", n: 8, who: "Ben", title: [Interfaces], href:none,

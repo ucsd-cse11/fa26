@@ -112,4 +112,5 @@
 
 #asset("assets/site.css", read("assets/site.css", encoding: none))
 #asset("assets/autograder-ticket.png", read("assets/autograder-ticket.png", encoding: none))
+#asset("assets/lecture-8-notes.pdf", read("assets/lecture-8-notes.pdf", encoding: none))
 #asset("typst.txt", read("typst.txt", encoding: none))
