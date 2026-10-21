@@ -191,10 +191,16 @@
       (label: [regions worksheet], href: "https://ucsd-cse11.github.io/book/fa26/worksheets/regions.pdf"),
       (label: [slides], href: "https://cseweb.ucsd.edu/classes/fa26/cse11-002/lec8.pdf"),
     )),
-  (date: d(10, 22),  kind: "lecture", n: 9, who: "Joe", title: [Recursive Data], href:none),
+  (date: d(10, 22),  kind: "lecture", n: 9, who: "Joe", title: [Recursive Data], href:none,
+    extras: (
+      (label: [worksheet], href: "https://ucsd-cse11.github.io/book/fa26/worksheets/region-calls.pdf"),
+    )),
   (date: d(10, 22),  kind: "due", href: "https://us.prairielearn.com/pl/course_instance/232999/assessments", title: [Ch09], time: "9:30am"),
   (date: d(10, 23), kind: "due", time: "11:59pm", title: [PA2], href: "assignments/pa2.html"),
 
   // Week 5
-  (date: d(10, 26),  kind: "lecture", n: 9, who: "Ben", title: [Recursive Data], href:none),
+  (date: d(10, 26),  kind: "lecture", n: 9, who: "Ben", title: [Recursive Data], href:none,
+    extras: (
+      (label: [worksheet], href: "https://ucsd-cse11.github.io/book/fa26/worksheets/region-calls.pdf"),
+    )),
 )
