@@ -131,7 +131,9 @@
       (label: [slides], href: "https://cseweb.ucsd.edu/classes/fa26/cse11-002/lec3.pdf"),
     ),
   ),
-  (date: d(10, 6),  kind: "due", href: "https://us.prairielearn.com/pl/course_instance/232999/assessments", title: [Ch04], time: "9:30am"),
+  // Past-due readings link to the book: the PrairieLearn assessment is hidden
+  // once its deadline passes, and the chapter itself stays readable.
+  (date: d(10, 6),  kind: "due", href: "https://ucsd-cse11.github.io/book/fa26/recipe-for-success/breaking-it-down.html", title: [Ch04], time: "9:30am"),
   (date: d(10, 6),  kind: "lecture", n: 4, who: "Joe", title: [`java` and main], href: none,
     extras: (
       (label: [main worksheet], href: "https://ucsd-cse11.github.io/book/fa26/worksheets/main-and-java.pdf"),
@@ -149,7 +151,7 @@
     extras: (
       (label: [accumulators worksheet], href: "https://ucsd-cse11.github.io/book/fa26/worksheets/accumulators.pdf"),
     )),
-  (date: d(10, 8),  kind: "due", href: "https://us.prairielearn.com/pl/course_instance/232999/assessments", title: [Ch05], time: "9:30am"),
+  (date: d(10, 8),  kind: "due", href: "https://ucsd-cse11.github.io/book/fa26/arrays/collections.html", title: [Ch05], time: "9:30am"),
   (date: d(10, 9), kind: "due", time: "11:59pm", title: [PA1], href: "assignments/pa1.html"),
 
   // Week 3
@@ -162,7 +164,7 @@
     extras: (
       (label: [memory diagrams worksheet], href: "https://ucsd-cse11.github.io/book/fa26/worksheets/memory-diagrams.pdf"),
     )),
-  (date: d(10, 13),  kind: "due", href: "https://us.prairielearn.com/pl/course_instance/232999/assessments", title: [Ch06], time: "9:30am"),
+  (date: d(10, 13),  kind: "due", href: "https://ucsd-cse11.github.io/book/fa26/memory/where-things-are.html", title: [Ch06], time: "9:30am"),
   (date: d(10, 14),  kind: "lecture", n: 6, who: "Ben", title: [Memory in Java], href:none,
     extras: (
       (label: [memory diagrams worksheet], href: "https://ucsd-cse11.github.io/book/fa26/worksheets/memory-diagrams.pdf"),
@@ -172,7 +174,7 @@
     extras: (
       (label: [days and pixels worksheet], href: "https://ucsd-cse11.github.io/book/fa26/worksheets/days-and-pixels.pdf"),
     )),
-  (date: d(10, 15),  kind: "due", href: "https://us.prairielearn.com/pl/course_instance/232999/assessments", title: [Ch07], time: "9:30am"),
+  (date: d(10, 15),  kind: "due", href: "https://ucsd-cse11.github.io/book/fa26/nested-and-2d/2d-arrays.html", title: [Ch07], time: "9:30am"),
 
   // Week 4
   (date: d(10, 19),  kind: "lecture", n: 7, who: "Ben", title: [Nesting Objects], href:none,
@@ -185,7 +187,7 @@
       (label: [regions worksheet], href: "https://ucsd-cse11.github.io/book/fa26/worksheets/regions.pdf"),
       (label: [notes], href: "assets/lecture-8-notes.pdf"),
     )),
-  (date: d(10, 20),  kind: "due", href: "https://us.prairielearn.com/pl/course_instance/232999/assessments", title: [Ch08], time: "9:30am"),
+  (date: d(10, 20),  kind: "due", href: "https://ucsd-cse11.github.io/book/fa26/sharing-behavior/searching-for-images.html", title: [Ch08], time: "9:30am"),
   (date: d(10, 21),  kind: "lecture", n: 8, who: "Ben", title: [Interfaces], href:none,
     extras: (
       (label: [regions worksheet], href: "https://ucsd-cse11.github.io/book/fa26/worksheets/regions.pdf"),
