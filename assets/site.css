@@ -207,3 +207,7 @@ a.email { display: block; font-size: .78rem; }
 @media (max-width: 40rem) {
   .assign-table { table-layout: auto; }
 }
+
+.row:has(.lz-disc) .when {
+    visibility: hidden;
+}

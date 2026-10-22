@@ -123,6 +123,11 @@
     )
   ),
   (date: d(10, 2), kind: "due", time: "11:59pm", title: [PA0], href: "assignments/pa0.html"),
+  (date: d(10, 3), kind: "disc", n: 1, title: [], href: none,
+    extras: (
+      (label: [slides], href: "assets/discussions/discussion_week1.pdf"),
+    )
+  ),
 
   // Week 2
   (date: d(10, 5), kind: "lecture", n: 3, who: "Ben", title: [Designing Data], href: none,
@@ -153,6 +158,11 @@
     )),
   (date: d(10, 8),  kind: "due", href: "https://ucsd-cse11.github.io/book/fa26/arrays/collections.html", title: [Ch05], time: "9:30am"),
   (date: d(10, 9), kind: "due", time: "11:59pm", title: [PA1], href: "assignments/pa1.html"),
+  (date: d(10, 10), kind: "disc", n: 2, title: [], href: none,
+    extras: (
+      (label: [slides], href: "assets/discussions/discussion_week2.pdf"),
+    )
+  ),
 
   // Week 3
   (date: d(10, 12),  kind: "lecture", n: 5, who: "Ben", title: [Arrays], href:none,
@@ -175,6 +185,11 @@
       (label: [days and pixels worksheet], href: "https://ucsd-cse11.github.io/book/fa26/worksheets/days-and-pixels.pdf"),
     )),
   (date: d(10, 15),  kind: "due", href: "https://ucsd-cse11.github.io/book/fa26/nested-and-2d/2d-arrays.html", title: [Ch07], time: "9:30am"),
+  (date: d(10, 17), kind: "disc", n: 3, title: [], href: none,
+    extras: (
+      (label: [slides], href: "assets/discussions/discussion_week3.pdf"),
+    )
+  ),
 
   // Week 4
   (date: d(10, 19),  kind: "lecture", n: 7, who: "Ben", title: [Nesting Objects], href:none,
