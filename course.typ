@@ -211,6 +211,7 @@
   (date: d(10, 22),  kind: "lecture", n: 9, who: "Joe", title: [Recursive Data], href:none,
     extras: (
       (label: [worksheet], href: "https://ucsd-cse11.github.io/book/fa26/worksheets/region-calls.pdf"),
+      (label: [notes], href: "assets/lecture-9-notes.pdf"),
     )),
   (date: d(10, 22),  kind: "due", href: "https://us.prairielearn.com/pl/course_instance/232999/assessments", title: [Ch09], time: "9:30am"),
   (date: d(10, 23), kind: "due", time: "11:59pm", title: [PA2], href: "assignments/pa2.html"),
