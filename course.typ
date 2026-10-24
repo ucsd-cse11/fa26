@@ -221,5 +221,7 @@
     extras: (
       (label: [worksheet], href: "https://ucsd-cse11.github.io/book/fa26/worksheets/region-calls.pdf"),
     )),
+  (date: d(10, 27),  kind: "lecture", n: 10, who: "Joe", title: [Java Details], href:none),
+  (date: d(10, 27),  kind: "due", href: "https://us.prairielearn.com/pl/course_instance/232999/assessments", title: [Ch10], time: "9:30am"),
   (date: d(10, 30), kind: "due", time: "11:59pm", title: [PA1Re], href: "https://us.prairielearn.com/pl/course_instance/232999/assessments"),
 )
