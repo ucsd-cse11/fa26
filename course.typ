@@ -220,6 +220,7 @@
   (date: d(10, 26),  kind: "lecture", n: 9, who: "Ben", title: [Recursive Data], href:none,
     extras: (
       (label: [worksheet], href: "https://ucsd-cse11.github.io/book/fa26/worksheets/region-calls.pdf"),
+      (label: [slides], href: "https://cseweb.ucsd.edu/classes/fa26/cse11-002/lec9.pdf"),
     )),
   (date: d(10, 27),  kind: "lecture", n: 10, who: "Joe", title: [Java Details], href:none),
   (date: d(10, 27),  kind: "due", href: "https://us.prairielearn.com/pl/course_instance/232999/assessments", title: [Ch10], time: "9:30am"),
