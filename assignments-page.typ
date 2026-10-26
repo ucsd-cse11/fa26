@@ -16,7 +16,7 @@
           #html.elem("a", attrs: (href: "assignments/pa0.html"), [PA 0])
         ]
         #html.elem("td", [October 2nd, 11:59 PM])
-        #html.elem("td", [])
+        #html.elem("td", [No Resubmission])
       ]
 
       // PA1
@@ -25,7 +25,7 @@
           #html.elem("a", attrs: (href: "assignments/pa1.html"), [PA 1])
         ]
         #html.elem("td", [October 9th, 11:59 PM])
-        #html.elem("td", [])
+        #html.elem("td", [October 30th, 11:59 PM])
       ]
 
       // PA2
