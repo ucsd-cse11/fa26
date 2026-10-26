@@ -117,4 +117,5 @@
 #asset("assets/discussions/discussion_week1.pdf", read("assets/discussions/discussion_week1.pdf", encoding: none))
 #asset("assets/discussions/discussion_week2.pdf", read("assets/discussions/discussion_week2.pdf", encoding: none))
 #asset("assets/discussions/discussion_week3.pdf", read("assets/discussions/discussion_week3.pdf", encoding: none))
+#asset("assets/discussions/discussion_week4.pdf", read("assets/discussions/discussion_week4.pdf", encoding: none))
 #asset("typst.txt", read("typst.txt", encoding: none))

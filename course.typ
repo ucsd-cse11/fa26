@@ -215,6 +215,11 @@
     )),
   (date: d(10, 22),  kind: "due", href: "https://us.prairielearn.com/pl/course_instance/232999/assessments", title: [Ch09], time: "9:30am"),
   (date: d(10, 23), kind: "due", time: "11:59pm", title: [PA2], href: "assignments/pa2.html"),
+  (date: d(10, 24), kind: "disc", n: 4, title: [], href: none,
+    extras: (
+      (label: [slides], href: "assets/discussions/discussion_week4.pdf"),
+    )
+  ),
 
   // Week 5
   (date: d(10, 26),  kind: "lecture", n: 9, who: "Ben", title: [Recursive Data], href:none,
