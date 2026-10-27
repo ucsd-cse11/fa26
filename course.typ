@@ -240,4 +240,7 @@
   (date: d(10, 29),  kind: "lecture", n: 11, who: "Joe", title: [Extending Classes], href:none),
   (date: d(10, 29),  kind: "due", href: "https://us.prairielearn.com/pl/course_instance/232999/assessments", title: [Ch11], time: "9:30am"),
   (date: d(10, 30), kind: "due", time: "11:59pm", title: [PA1Re], href: "https://us.prairielearn.com/pl/course_instance/232999/assessments"),
+
+  // Week 6
+  (date: d(11, 2),  kind: "lecture", n: 11, who: "Ben", title: [Extending Classes], href:none),
 )
