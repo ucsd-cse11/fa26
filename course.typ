@@ -234,6 +234,7 @@
       (label: [code], href: "https://github.com/ucsd-cse11/lecture10"),
     )),
   (date: d(10, 27),  kind: "due", href: "https://us.prairielearn.com/pl/course_instance/232999/assessments", title: [Ch10], time: "9:30am"),
+  (date: d(10, 27), kind: "due", time: "11:59pm", title: [PA3], href: "assignments/pa3.html"),
   (date: d(10, 28),  kind: "lecture", n: 10, who: "Ben", title: [Java Details], href:none,
     extras: (
       (label: [worksheet], href: "https://ucsd-cse11.github.io/book/fa26/worksheets/reading-pict-2.pdf"),

@@ -2,6 +2,7 @@
 #import "assignments/pa0.typ": pa0
 #import "assignments/pa1.typ": pa1
 #import "assignments/pa2.typ": pa2
+#import "assignments/pa3.typ": pa3
 #import "syllabus.typ": syllabus
 #import "assignments-page.typ": assignments-page
 
@@ -63,6 +64,17 @@
   #shell(
     rail(term, doodle, quick-links, staff, base: "../"),
     html.elem("main", pa2),
+    base: "../",
+  )
+]
+
+// PA3 assignment page
+#document("assignments/pa3.html",
+  title: [PA 3],
+  description: [#term.course, #term.name: PA 3])[
+  #shell(
+    rail(term, doodle, quick-links, staff, base: "../"),
+    html.elem("main", pa3),
     base: "../",
   )
 ]
