@@ -240,10 +240,16 @@
       (label: [worksheet], href: "https://ucsd-cse11.github.io/book/fa26/worksheets/reading-pict-2.pdf"),
       (label: [slides], href: "https://cseweb.ucsd.edu/classes/fa26/cse11-002/lec10.pdf"),
     )),
-  (date: d(10, 29),  kind: "lecture", n: 11, who: "Joe", title: [Extending Classes], href:none),
+  (date: d(10, 29),  kind: "lecture", n: 11, who: "Joe", title: [Extending Classes], href:none,
+    extras: (
+      (label: [worksheet], href: "https://ucsd-cse11.github.io/book/fa26/worksheets/drawing-picts.pdf"),
+    )),
   (date: d(10, 29),  kind: "due", href: "https://us.prairielearn.com/pl/course_instance/232999/assessments", title: [Ch11], time: "9:30am"),
   (date: d(10, 30), kind: "due", time: "11:59pm", title: [PA1Re], href: "https://us.prairielearn.com/pl/course_instance/232999/assessments"),
 
   // Week 6
-  (date: d(11, 2),  kind: "lecture", n: 11, who: "Ben", title: [Extending Classes], href:none),
+  (date: d(11, 2),  kind: "lecture", n: 11, who: "Ben", title: [Extending Classes], href:none,
+    extras: (
+      (label: [worksheet], href: "https://ucsd-cse11.github.io/book/fa26/worksheets/drawing-picts.pdf"),
+    )),
 )
