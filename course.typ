@@ -244,6 +244,7 @@
     extras: (
       (label: [worksheet], href: "https://ucsd-cse11.github.io/book/fa26/worksheets/drawing-picts.pdf"),
       (label: [notes], href: "assets/lecture-11-notes.pdf"),
+      (label: [code], href: "https://github.com/ucsd-cse11/lecture11"),
     )),
   (date: d(10, 29),  kind: "due", href: "https://us.prairielearn.com/pl/course_instance/232999/assessments", title: [Ch11], time: "9:30am"),
   (date: d(10, 30), kind: "due", time: "11:59pm", title: [PA1Re], href: "https://us.prairielearn.com/pl/course_instance/232999/assessments"),
