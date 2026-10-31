@@ -254,4 +254,5 @@
     extras: (
       (label: [worksheet], href: "https://ucsd-cse11.github.io/book/fa26/worksheets/drawing-picts.pdf"),
     )),
+  (date: d(11, 3),  kind: "due", href: "https://us.prairielearn.com/pl/course_instance/232999/assessments", title: [Ch12], time: "9:30am"),
 )
