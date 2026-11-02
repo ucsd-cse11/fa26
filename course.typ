@@ -253,6 +253,7 @@
   (date: d(11, 2),  kind: "lecture", n: 11, who: "Ben", title: [Extending Classes], href:none,
     extras: (
       (label: [worksheet], href: "https://ucsd-cse11.github.io/book/fa26/worksheets/drawing-picts.pdf"),
+      (label: [slides], href: "https://cseweb.ucsd.edu/classes/fa26/cse11-002/lec11.pdf"),
     )),
   (date: d(11, 3),  kind: "due", href: "https://us.prairielearn.com/pl/course_instance/232999/assessments", title: [Ch12], time: "9:30am"),
 )
