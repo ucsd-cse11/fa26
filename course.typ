@@ -260,4 +260,8 @@
       (label: [worksheet], href: "https://ucsd-cse11.github.io/book/fa26/worksheets/design-choices.pdf"),
     )),
   (date: d(11, 3),  kind: "due", href: "https://us.prairielearn.com/pl/course_instance/232999/assessments", title: [Ch12], time: "9:30am"),
+  (date: d(11, 4),  kind: "lecture", n: 12, who: "Ben", title: [Abstract Classes and Mutation], href:none,
+    extras: (
+      (label: [worksheet], href: "https://ucsd-cse11.github.io/book/fa26/worksheets/design-choices.pdf"),
+    )),
 )
