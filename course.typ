@@ -263,5 +263,6 @@
   (date: d(11, 4),  kind: "lecture", n: 12, who: "Ben", title: [Abstract Classes and Mutation], href:none,
     extras: (
       (label: [worksheet], href: "https://ucsd-cse11.github.io/book/fa26/worksheets/design-choices.pdf"),
+      (label: [slides], href: "https://cseweb.ucsd.edu/classes/fa26/cse11-002/lec12.pdf"),
     )),
 )
