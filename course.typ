@@ -265,4 +265,5 @@
       (label: [worksheet], href: "https://ucsd-cse11.github.io/book/fa26/worksheets/design-choices.pdf"),
       (label: [slides], href: "https://cseweb.ucsd.edu/classes/fa26/cse11-002/lec12.pdf"),
     )),
+  (date: d(11, 5),  kind: "due", href: "https://us.prairielearn.com/pl/course_instance/232999/assessments", title: [Ch13], time: "9:30am"),
 )
