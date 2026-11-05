@@ -269,6 +269,8 @@
   (date: d(11, 5),  kind: "lecture", n: 13, who: "Joe", title: [Designing a Simulation], href:none,
     extras: (
       (label: [worksheet], href: "https://ucsd-cse11.github.io/book/fa26/worksheets/roomba.pdf"),
+      (label: [notes], href: "assets/lecture-13-notes.pdf"),
+      (label: [code], href: "https://github.com/ucsd-cse11/lecture13"),
     )),
   (date: d(11, 5),  kind: "due", href: "https://us.prairielearn.com/pl/course_instance/232999/assessments", title: [Ch13], time: "9:30am"),
   (date: d(11, 9),  kind: "lecture", n: 13, who: "Ben", title: [Designing a Simulation], href:none,
