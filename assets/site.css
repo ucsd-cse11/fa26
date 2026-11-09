@@ -141,8 +141,21 @@ a.email { display: block; font-size: .78rem; }
 .reading::before { content: "· "; }
 .note { font-size: .82rem; color: var(--muted); margin-top: .02rem; }
 @media (max-width: 62rem) {
-  .rows { grid-template-columns: 5.6rem minmax(0, 1fr); }
-  .due { grid-column: 2; text-align: left; }
+  /* Narrow: each row is its own grid so the due lane stacks under the
+     main lane INSIDE its date's row, instead of auto-placing into a new
+     row of the week grid (which shifted deadlines onto the next date). */
+  .rows { display: block; }
+  .row {
+    display: grid; grid-template-columns: 5.6rem minmax(0, 1fr);
+    border-bottom: 1px solid var(--rule-faint); padding: .24rem 0;
+  }
+  .rows > .row:last-child { border-bottom: 0; }
+  .row > * { border-bottom: 0; padding: 0; }
+  .when { grid-row: 1 / span 2; align-self: start; padding-top: .08rem; }
+  .what, .due { grid-column: 2; }
+  .what:empty, .due:empty { display: none; }
+  .due { text-align: left; }
+  .due .lz { margin-left: .22em; }
 }
 
 /* ---------------------------------------------------------- office-hours page */
