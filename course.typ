@@ -281,6 +281,7 @@
   (date: d(11, 10),  kind: "lecture", n: 14, who: "Joe", title: [Implementing a Design], href:none,
     extras: (
       (label: [worksheet], href: "https://ucsd-cse11.github.io/book/fa26/worksheets/roomba-code.pdf"),
+      (label: [notes], href: "assets/lecture-14-notes.pdf"),
     )),
   (date: d(11, 11), kind: "holiday", title: [University Holiday: No lecture and discussion], href: none),
   (date: d(11, 12),  kind: "lecture", n: 15, who: "Joe", title: [Review], href:none),
