@@ -278,7 +278,10 @@
       (label: [worksheet], href: "https://ucsd-cse11.github.io/book/fa26/worksheets/roomba.pdf"),
       (label: [slides], href: "https://cseweb.ucsd.edu/classes/fa26/cse11-002/lec13.pdf"),
     )),
-  (date: d(11, 10),  kind: "lecture", n: 14, who: "Joe", title: [Implementing a Design], href:none),
+  (date: d(11, 10),  kind: "lecture", n: 14, who: "Joe", title: [Implementing a Design], href:none,
+    extras: (
+      (label: [worksheet], href: "https://ucsd-cse11.github.io/book/fa26/worksheets/roomba-code.pdf"),
+    )),
   (date: d(11, 11), kind: "holiday", title: [University Holiday: No lecture and discussion], href: none),
   (date: d(11, 12),  kind: "lecture", n: 15, who: "Joe", title: [Review], href:none),
   (date: d(11, 12),  kind: "due", href: "https://us.prairielearn.com/pl/course_instance/232999/assessments", title: [Readings catch-up (Ch1–13)], time: "9:30am"),
