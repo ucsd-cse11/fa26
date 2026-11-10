@@ -277,6 +277,7 @@
     extras: (
       (label: [worksheet], href: "https://ucsd-cse11.github.io/book/fa26/worksheets/roomba.pdf"),
       (label: [slides], href: "https://cseweb.ucsd.edu/classes/fa26/cse11-002/lec13.pdf"),
+      (label: [code], href: "https://cseweb.ucsd.edu/classes/fa26/cse11-002/lec13.zip"),
     )),
   (date: d(11, 10),  kind: "lecture", n: 14, who: "Joe", title: [Implementing a Design], href:none,
     extras: (
