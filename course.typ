@@ -248,6 +248,11 @@
     )),
   (date: d(10, 29),  kind: "due", href: "https://us.prairielearn.com/pl/course_instance/232999/assessments", title: [Ch11], time: "9:30am"),
   (date: d(10, 30), kind: "due", time: "11:59pm", title: [PA1Re], href: "https://us.prairielearn.com/pl/course_instance/232999/assessments"),
+  (date: d(10, 31), kind: "disc", n: 5, title: [], href: none,
+    extras: (
+      (label: [slides], href: "assets/discussions/discussion_week5.pdf"),
+    )
+  ),
 
   // Week 6
   (date: d(11, 2),  kind: "lecture", n: 11, who: "Ben", title: [Extending Classes], href:none,
@@ -289,4 +294,9 @@
   (date: d(11, 12),  kind: "lecture", n: 15, who: "Joe", title: [Review], href:none),
   (date: d(11, 12),  kind: "due", href: "https://us.prairielearn.com/pl/course_instance/232999/assessments", title: [Readings catch-up (Ch1–13)], time: "9:30am"),
   (date: d(11, 13), kind: "due", time: "11:59pm", title: [PA2Re], href: "https://us.prairielearn.com/pl/course_instance/232999/assessments"),
+  (date: d(11, 7), kind: "disc", n: 6, title: [], href: none,
+    extras: (
+      (label: [slides], href: "assets/discussions/discussion_week6.pdf"),
+    )
+  ),
 )
