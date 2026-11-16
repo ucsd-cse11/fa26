@@ -297,6 +297,14 @@
     extras: (
       (label: [worksheet], href: "https://ucsd-cse11.github.io/book/fa26/worksheets/roomba-code-ben.pdf"),
     )),
+  (date: d(11, 17),  kind: "lecture", n: 16, who: "Joe", title: [Strategy Interfaces], href:none,
+    extras: (
+      (label: [worksheet], href: "https://ucsd-cse11.github.io/book/fa26/worksheets/roomba-strategy.pdf"),
+    )),
+  (date: d(11, 18),  kind: "lecture", n: 15, who: "Ben", title: [Strategy Interfaces], href:none,
+    extras: (
+      (label: [worksheet], href: "https://ucsd-cse11.github.io/book/fa26/worksheets/roomba-strategy.pdf"),
+    )),
   (date: d(11, 13), kind: "due", time: "11:59pm", title: [PA2Re], href: "https://us.prairielearn.com/pl/course_instance/232999/assessments"),
   (date: d(11, 7), kind: "disc", n: 6, title: [], href: none,
     extras: (
