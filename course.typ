@@ -296,6 +296,7 @@
   (date: d(11, 16),  kind: "lecture", n: 14, who: "Ben", title: [Implementing a Design], href:none,
     extras: (
       (label: [worksheet], href: "https://ucsd-cse11.github.io/book/fa26/worksheets/roomba-code-ben.pdf"),
+      (label: [code], href: "https://cseweb.ucsd.edu/classes/fa26/cse11-002/lec14.zip"),
     )),
   (date: d(11, 17),  kind: "lecture", n: 16, who: "Joe", title: [Strategy Interfaces], href:none,
     extras: (
