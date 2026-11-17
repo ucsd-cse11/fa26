@@ -301,6 +301,8 @@
   (date: d(11, 17),  kind: "lecture", n: 16, who: "Joe", title: [Strategy Interfaces], href:none,
     extras: (
       (label: [worksheet], href: "https://ucsd-cse11.github.io/book/fa26/worksheets/roomba-strategy.pdf"),
+      (label: [notes], href: "assets/lecture-16-notes.pdf"),
+      (label: [code], href: "https://github.com/ucsd-cse11/lecture16"),
     )),
   (date: d(11, 18),  kind: "lecture", n: 15, who: "Ben", title: [Strategy Interfaces], href:none),
   (date: d(11, 19),  kind: "due", href: "https://ucsd-cse11.github.io/book/fa26/dramatis-personai/asking-ai.html", title: [Ch14], time: "9:30am"),
