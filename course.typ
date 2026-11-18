@@ -302,6 +302,7 @@
     extras: (
       (label: [worksheet], href: "https://ucsd-cse11.github.io/book/fa26/worksheets/roomba-strategy.pdf"),
       (label: [notes], href: "assets/lecture-16-notes.pdf"),
+      (label: [blog post], href: "https://claude.dev/blog/how-the-claude-code-team-thinks-about-verification/#property-tests-constraints-that-cant-break"),
       (label: [code], href: "https://github.com/ucsd-cse11/lecture16"),
     )),
   (date: d(11, 18),  kind: "lecture", n: 15, who: "Ben", title: [Strategy Interfaces], href:none,
