@@ -144,6 +144,7 @@
 #asset("assets/lecture-13-notes.pdf", read("assets/lecture-13-notes.pdf", encoding: none))
 #asset("assets/lecture-14-notes.pdf", read("assets/lecture-14-notes.pdf", encoding: none))
 #asset("assets/lecture-16-notes.pdf", read("assets/lecture-16-notes.pdf", encoding: none))
+#asset("assets/lecture-17-notes.pdf", read("assets/lecture-17-notes.pdf", encoding: none))
 #asset("assets/discussions/discussion_week1.pdf", read("assets/discussions/discussion_week1.pdf", encoding: none))
 #asset("assets/discussions/discussion_week2.pdf", read("assets/discussions/discussion_week2.pdf", encoding: none))
 #asset("assets/discussions/discussion_week3.pdf", read("assets/discussions/discussion_week3.pdf", encoding: none))

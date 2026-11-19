@@ -313,6 +313,8 @@
   (date: d(11, 19),  kind: "lecture", n: 17, who: "Joe", title: [Files and Exceptions], href:none,
     extras: (
       (label: [worksheet], href: "https://ucsd-cse11.github.io/book/fa26/worksheets/file-walk.pdf"),
+      (label: [notes], href: "assets/lecture-17-notes.pdf"),
+      (label: [code], href: "https://github.com/ucsd-cse11/lecture17"),
     )),
   (date: d(11, 19),  kind: "due", href: "https://ucsd-cse11.github.io/book/fa26/dramatis-personai/asking-ai.html", title: [Ch14], time: "9:30am"),
   (date: d(11, 13), kind: "due", time: "11:59pm", title: [PA2Re], href: "https://us.prairielearn.com/pl/course_instance/232999/assessments"),
