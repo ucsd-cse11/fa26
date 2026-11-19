@@ -308,6 +308,7 @@
   (date: d(11, 18),  kind: "lecture", n: 15, who: "Ben", title: [Strategy Interfaces], href:none,
     extras: (
       (label: [worksheet], href: "https://ucsd-cse11.github.io/book/fa26/worksheets/roomba-strategy-ben.pdf"),
+      (label: [code], href: "https://cseweb.ucsd.edu/classes/fa26/cse11-002/lec15.zip"),
     )),
   (date: d(11, 19),  kind: "due", href: "https://ucsd-cse11.github.io/book/fa26/dramatis-personai/asking-ai.html", title: [Ch14], time: "9:30am"),
   (date: d(11, 13), kind: "due", time: "11:59pm", title: [PA2Re], href: "https://us.prairielearn.com/pl/course_instance/232999/assessments"),
