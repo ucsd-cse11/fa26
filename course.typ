@@ -330,4 +330,8 @@
       (label: [slides], href: "https://cseweb.ucsd.edu/classes/fa26/cse11-002/lec16.pdf"),
     )
   ),
+  (date: d(11, 24),  kind: "lecture", n: 18, who: "Joe", title: [Extending the Drive], href:none,
+    extras: (
+      (label: [worksheet], href: "https://ucsd-cse11.github.io/book/fa26/worksheets/extending-the-drive.pdf"),
+    )),
 )
