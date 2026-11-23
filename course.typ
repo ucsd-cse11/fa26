@@ -324,7 +324,7 @@
       (label: [slides], href: "assets/discussions/discussion_week6.pdf"),
     )
   ),
-  (date: d(11, 22),  kind: "lecture", n: 16, who: "Ben", title: [Files and Exceptions], href:none,
+  (date: d(11, 23),  kind: "lecture", n: 16, who: "Ben", title: [Files and Exceptions], href:none,
     extras: (
       (label: [worksheet], href: "https://ucsd-cse11.github.io/book/fa26/worksheets/file-walk.pdf"),
       (label: [slides], href: "https://cseweb.ucsd.edu/classes/fa26/cse11-002/lec16.pdf"),
