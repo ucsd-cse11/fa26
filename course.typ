@@ -332,6 +332,8 @@
     )),
   (date: d(11, 19),  kind: "due", href: "https://ucsd-cse11.github.io/book/fa26/dramatis-personai/asking-ai.html", title: [Ch14], time: "9:30am"),
   (date: d(11, 24),  kind: "due", href: "https://ucsd-cse11.github.io/book/fa26/files-and-throw/files-intro.html", title: [Ch15], time: "9:30am"),
+  (date: d(12, 1),  kind: "due", href: "https://ucsd-cse11.github.io/book/fa26/more-patterns/early-return.html", title: [Ch16], time: "9:30am"),
+  (date: d(12, 3),  kind: "due", href: "https://ucsd-cse11.github.io/book/fa26/review/values-records-methods.html", title: [Review], time: "9:30am"),
   (date: d(11, 13), kind: "due", time: "11:59pm", title: [PA2Re], href: "https://us.prairielearn.com/pl/course_instance/232999/assessments"),
   (date: d(11, 21), kind: "disc", n: 8, title: [], href: none,
     extras: (
