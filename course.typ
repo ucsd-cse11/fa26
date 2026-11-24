@@ -357,5 +357,6 @@
   (date: d(11, 25),  kind: "lecture", n: 17, who: "Ben", title: [Extending the Drive], href:none,
     extras: (
       (label: [worksheet], href: "https://ucsd-cse11.github.io/book/fa26/worksheets/extending-the-drive.pdf"),
+      (label: [code], href: "https://cseweb.ucsd.edu/classes/fa26/cse11-002/lec17.zip"),
     )),
 )
