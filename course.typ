@@ -278,6 +278,13 @@
       (label: [code], href: "https://github.com/ucsd-cse11/lecture13"),
     )),
   (date: d(11, 5),  kind: "due", href: "https://us.prairielearn.com/pl/course_instance/232999/assessments", title: [Ch13], time: "9:30am"),
+  (date: d(11, 7), kind: "disc", n: 6, title: [], href: none,
+    extras: (
+      (label: [slides], href: "assets/discussions/discussion_week6.pdf"),
+    )
+  ),
+
+  // Week 7
   (date: d(11, 9),  kind: "lecture", n: 13, who: "Ben", title: [Designing a Simulation], href:none,
     extras: (
       (label: [worksheet], href: "https://ucsd-cse11.github.io/book/fa26/worksheets/roomba.pdf"),
@@ -293,6 +300,13 @@
   (date: d(11, 11), kind: "holiday", title: [University Holiday: No lecture and discussion], href: none),
   (date: d(11, 12),  kind: "lecture", n: 15, who: "Joe", title: [Collections], href:none),
   (date: d(11, 12),  kind: "due", href: "https://us.prairielearn.com/pl/course_instance/232999/assessments", title: [Readings catch-up (Ch1–13)], time: "9:30am"),
+  (date: d(11, 14), kind: "disc", n: 7, title: [], href: none,
+    extras: (
+      (label: [slides], href: "assets/discussions/discussion_week7.pdf"),
+    )
+  ),
+  
+  // Week 8
   (date: d(11, 16),  kind: "lecture", n: 14, who: "Ben", title: [Implementing a Design], href:none,
     extras: (
       (label: [worksheet], href: "https://ucsd-cse11.github.io/book/fa26/worksheets/roomba-code-ben.pdf"),
@@ -319,11 +333,13 @@
   (date: d(11, 19),  kind: "due", href: "https://ucsd-cse11.github.io/book/fa26/dramatis-personai/asking-ai.html", title: [Ch14], time: "9:30am"),
   (date: d(11, 24),  kind: "due", href: "https://ucsd-cse11.github.io/book/fa26/files-and-throw/files-intro.html", title: [Ch15], time: "9:30am"),
   (date: d(11, 13), kind: "due", time: "11:59pm", title: [PA2Re], href: "https://us.prairielearn.com/pl/course_instance/232999/assessments"),
-  (date: d(11, 7), kind: "disc", n: 6, title: [], href: none,
+  (date: d(11, 21), kind: "disc", n: 8, title: [], href: none,
     extras: (
-      (label: [slides], href: "assets/discussions/discussion_week6.pdf"),
+      (label: [slides], href: "assets/discussions/discussion_week8.pdf"),
     )
   ),
+
+  // Week 9
   (date: d(11, 23),  kind: "lecture", n: 16, who: "Ben", title: [Files and Exceptions], href:none,
     extras: (
       (label: [worksheet], href: "https://ucsd-cse11.github.io/book/fa26/worksheets/file-walk.pdf"),

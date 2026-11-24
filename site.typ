@@ -151,4 +151,6 @@
 #asset("assets/discussions/discussion_week4.pdf", read("assets/discussions/discussion_week4.pdf", encoding: none))
 #asset("assets/discussions/discussion_week5.pdf", read("assets/discussions/discussion_week5.pdf", encoding: none))
 #asset("assets/discussions/discussion_week6.pdf", read("assets/discussions/discussion_week6.pdf", encoding: none))
+#asset("assets/discussions/discussion_week7.pdf", read("assets/discussions/discussion_week7.pdf", encoding: none))
+#asset("assets/discussions/discussion_week8.pdf", read("assets/discussions/discussion_week8.pdf", encoding: none))
 #asset("typst.txt", read("typst.txt", encoding: none))
