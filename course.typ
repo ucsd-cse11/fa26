@@ -352,6 +352,7 @@
   (date: d(11, 24),  kind: "lecture", n: 18, who: "Joe", title: [Extending the Drive], href:none,
     extras: (
       (label: [worksheet], href: "https://ucsd-cse11.github.io/book/fa26/worksheets/extending-the-drive.pdf"),
+      (label: [notes], href: "assets/lecture-18-notes.pdf"),
     )),
   (date: d(11, 25),  kind: "lecture", n: 17, who: "Ben", title: [Extending the Drive], href:none,
     extras: (
